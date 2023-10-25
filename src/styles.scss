@@ -1,1 +1,109 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    
+}:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    body {
+        background: var(--bg-color);
+        color: var(--text-color);
+    }
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title{
+        font-size: 3rem;
+        text-align: center;
+        margin: 20px;
+    }
+    .form-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin: 15px;
+            width: 65em;
+            height: 3em;
+            padding: 10px;
+            outline: none;
+            appearance: textfield;
+            &:focus{
+                border-bottom: 1px solid;
+
+            }
+
+            
+        }
+        input[type=number]::-webkit-inner-spin-button { 
+            -webkit-appearance: none;
+                
+        }
+        input[type=number] { 
+            -moz-appearance: textfield;
+            appearance: textfield;
+            
+        }
+        label{
+            width: 95%;
+            font-size: 1.5rem;
+            display: flex;
+            text-align: start;
+        }
+        textarea{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin: 15px;
+            width: 65em;
+            height: 8em;
+            padding: 10px;
+            outline: none;
+            &:focus{
+                border-bottom: 1px solid;
+
+            }
+
+        }
+    }
+}
+.butao{
+    text-align: center;
+    margin: 10px;
+    button{
+        background-color: #3498db; 
+        color: #ffffff; 
+        border: none; 
+        padding: 10px 20px; 
+        border-radius: 5px; 
+        font-size: 16px; 
+        cursor: pointer; 
+        transition: 0.5s linear;
+        &:hover{
+            transition: 0.5s linear;
+            transform: scale(1.05);
+            background-color: #2980b9; 
+
+        }
+    }
+}
+

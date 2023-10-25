@@ -1,0 +1,76 @@
+.mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    .mapa-content{
+        display: flex;
+        flex-direction: row;
+        h1{
+            font-size: 2rem;
+            text-align: center;
+            margin: 20px;
+        }
+        .mapa-1{
+            margin: 10px;
+        }
+        .mapa-2{
+            margin: 10px;
+        }
+    }
+    .forms{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 1250px){
+    .mapa{
+            
+        .mapa-content{
+            flex-direction: column;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 900px){
+    .forms{
+        margin-right: 5rem;
+        margin-left: 5rem;
+        input{
+            width: 45em;
+        }
+        textarea{
+            width: 45em;
+        }
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .forms{
+        input{
+            width: 35em;
+        }
+        textarea{
+            width: 35em;
+        }
+    }
+}
+@media only screen and (max-width: 500px){
+    .forms{
+        .title{
+            font-size: 2.5rem;
+        }
+        input{
+            width: 25em;
+        }
+        label{
+            width:85%;
+        }
+        textarea{
+            width: 25em;
+        }
+    }
+}

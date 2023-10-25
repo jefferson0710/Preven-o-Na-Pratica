@@ -1,0 +1,30 @@
+.sobre{
+    margin: 20rem;
+    max-width: 90rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    h1{
+        font-size: 6rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .sobre{
+        margin-top: 20rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        align-items: center;
+        h1{
+            text-align: center;
+
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
