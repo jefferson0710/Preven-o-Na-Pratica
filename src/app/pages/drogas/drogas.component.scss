@@ -1,0 +1,25 @@
+/* styles.css */
+
+/* Estilos para centralizar o conteúdo na parte inferior da tela */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+  }
+  
+  .topicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .topicos > div {
+    flex: 0 0 calc(20% - 20px);
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  

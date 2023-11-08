@@ -1,13 +1,30 @@
 <app-navbar></app-navbar>
 
-<form action="" class="forms">
-  <form [formGroup]="contactForm" (ngSubmit)="submit()" class="pt-3">
-    <div class="form-content">
-      <select class="form-select" formControlName="id">
-        <option [ngValue]="0">Selecione...</option>
-        <option *ngFor="let item of drogas" [ngValue]="item.id">{{ item.name }}</option>
-      </select>
-      <button class="butao btn btn-primary" type="submit">Filtrar</button>
+<body class="row">
+  <div class="topicos container">
+    <div class="maconha">
+      <img width="64" height="64"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADEElEQVR4nNWZXWhOcRzHP2zcYU3csEnKO7XcuKEW23CpVm5ELta8RCyUWj3LbrzGhQsrJZak1rzWkBC58NaQmGxEaS6Ykg1rjv71O3U6nec8//8553nO+X/r29Pz8v3/vt/nnP/5v0HxsRVoxnIsBv4IF2IxHgKO8D6WYq0nhMt6LL8ajvABlmFRQAiXC7AIR0OCHMIifAoJ8hFLMDckhMs5pTDyCNgDVETUN2sEaYrYdgXQIh4L4r0U+yn3c6VhsYsaQS4YtlkJHBZPSv9OR9TjKzoE7AbKNIu+1AjSq9lWudwdQz79DR3x8TzFnwI1BbTjgWGNIL+AcQXaWgY8y6M/ohNkQ4iBUWB/iIlZGiFczgzx0CTzs3zaRp0gszVMXAImBWhXGQSpDdBPBro0tOoPw6TDh1Fd9mk+XaNBkPU+7XTguYauHwOc0jTzBqjy6DYZBNno0VUDbzV1J02CrDMwpEbqGZ5FlK7OXWxVFZgJOD42mARRj71Bg8ZfAVOAvQaaFulnvQaar8AEDHHCoIDidaDN4PdtMh6Y1DhGBNQYFlH8VqTfOsKlRMS9CMWKxTvEQEMGAjjC1cTEkwyEeEwCMHkUF4trSAhXUgzRTYKolhlrqUMMy9xPC6oTtQO3ZB7zXagGxBfyj7QGrFNKwR6p3S3rnEGPv37x3O4+CK5moA/E5WV3s2AkA2ai8rd3r2xnBgxF5Q5/XzmXAVOOIc8GdfoyzR2QrLBLZumBmAicyYBJpwA7dKfz2zL6ABiJcvqltjWvZcC8I7wNzCcG6mXRNJaC+TGpXUeCWGK4/I3LQTmDTBQrgYEUrsgAsCKpENtlhzGtvjEqD59YaE0xgOOj8hIJuZiFPwBbgM/y/qB8FqfNXKlC/JWp92YZXBXuynd18pn67maM2zVnEmQesAvolCPlPs86wB0o1esX2QM+LdulQYdC7kzBP5BNFU2HtKHa8rbt1usTD+dlcqu8pYJ9Yk7tJ1uN5RLkNZajHPgB/PPt3FuJTrkqB7ActSansWQY6sxRHaaqsxR1YJo4/gMqPMPic/jYEAAAAABJRU5ErkJggg==">
+      <h2>Maconha</h2>
+      <p>Saiba mais sobre a maconha.</p>
     </div>
-  </form>
-</form>
+    <div class="alcool">
+      <img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/alcohol.png" alt="alcohol"/>
+      <h2>Álcool</h2>
+      <p>Saiba mais sobre o álcool.</p>
+    </div>
+    <div class="cocaina">
+      <img width="64" height="64"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA6klEQVR4nO3VPUoEQRCG4cdE9AYbuRcRFAMRTPcMa+oJFBNDD+EJNBI0MdDEI/iTLhpspAuCwkhBCSI6s8tMZ/NB0d3QvF93Ud1FO21gghMMWrL+hL9ghAt84B4HWNURfDPjDRXGOMcNVrqGVzjDUpocdg2vMgK+h4cS8OpHTBeBr+MZWzl/bYDPcm8P16dFXy3lH1HoKb/b0RzPf5bfxEIapEFVAv6taUl46LEkPHTUAF/Gad40xmGmNQriOte1ih56+w/8GJ8NKbzDPrZxmcZXWPttEm0uOlGcNOA7c8DrIsxqtYv3FgaTLz/n9ut+kh7dAAAAAElFTkSuQmCC">     
+       <p>Saiba mais sobre a cocaína.</p>
+    </div>
+    <div class="crack">
+      <img width="64" height="64" src="https://img.icons8.com/ios-glyphs/30/000000/smoking-pipe.png" alt="smoking-pipe" />
+      <h2>Crack</h2>
+      <p>Saiba mais sobre o crack.</p>
+    </div>
+    <div class="ectase">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/0lEQVR4nO2bW4iNURTHf+TWuA6GhJHrzKBc8oDk1jxIygMTD9Kk3HIb1/LCIJFSQ4yEN7lfUsjlibyM8CAUmqJmJjPkNhjjdrRqfdp9nXPmO9+c8e3DXrVq2vv/7b3XmrXWXnvvdaBpmgjcAD4DsQxhWet1YDzNpFnANwsECsuy9plhhW8H1FggRHO5WmVJmSZbsPh08aQwCphrwcLTxSJLYOoFDAJWWLDwdPEKlUlkS0pTgJ8WLLil+Ie6dkIaA7y3YKEtxe+A0am4g6P/mQYAD4DKDOf7QG4YBYzToPEvBD6RJRTl6PaRySwyOApDOcA54GaG89mwVjDHAv9NF4ssKVORBQtPF4ssTgGpUpEF/zlnATgXwMUAXBDE7QK4bRCXB+ASIVwmiEuFcWcB3GEIdxrEHYdx9wFYfiHyBbgK7ASWAsuBbcBl4FMcvLRdAbYrdhmwC7gGNGRSKlwHlACdk4wtfasUWwusbALfBVireKsVcAbINsboCMwG1gEb9J3efKLO9uG7Kn4JsAaYAfQ0+rsD521VwF6glX4rT1EnEhRWyfP7RaDAN99q4HscfCNwCuijOJljn20KOG0IXwx8CPCN+PUiY779TeDFgjxqpW8WViigFuim3ywGfqWwMLGG+fqtuMbbBLjHPldAXafOBgWUKF5M+mvI3WKIjrE5Tv9zoLf2D9FdxXOH9VEr4KsGJvQJKhaSjxtW4I8Du7Uv3yjbO6ptPTRGRKaA20b0DrKQZIqUHUOowtcn8aTcZ+71QCfF34lSAfsVW9gM4T2epmOVB8R7ZbAHolTAFsUu9LV/1ArNRN9VKcZsW6BjlQZUgBc8t0apgFLFzvO1S7VZhwRKqNK+sb52GUNoR4ovvtuiVMAho6LcbB+YJDBKtohWb8Qz6SMBFSAKFDocpQLuKrat1uB57eISQhN81eaNhqDFRrvs/220/WGAeV8D7RV/L0oF/AD6xsnkHhkLlMLEMuVR2iYu8MTASx9qOT8Dpt1C/QPiWzQR2m7s4W+Mdjm0ZMUZN0vPAuZ/08vy9gSYr8YoedkZcI0tqoB6oJ9+M91n8i+AjVqfK3XIm4CXPpfwtr/BAc79DQY+N8G9wl9XQAy4ZfwoYWrAHL3WV7h8rAn8K40pqHsFSYD+mgJiwAX1be+gsjvBL06q9abHO0B5ND8BvkrzDbkUQee4ZOuFSAWQZ4zRGhiuFxsz9G/v2Cw0DBjqmzdPM8vCOH35AaN+ZAqIqV8fBEYkGTtPd41GPQeUxRHWpJGaIjdmWpVYpSZDZbp1nQSeJcE/1ZukvXrrc1bHaO46XJkcEVlAzBJ2CsBZQOpUZIHpOhfAxQAiC4IFvjN+prLcNfhfof7Qb1dIy9Am/U7/AAAAAElFTkSuQmCC">
+      <h2>Êxtase</h2>
+      <p>Saiba mais sobre o êxtase.</p>
+    </div>
+  </div>
+</body>
