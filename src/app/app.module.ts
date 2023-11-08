@@ -5,6 +5,8 @@ import { ContatoComponent } from './pages/contato/contato.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FormularioComponent } from './pages/formulario/formulario.component';
 import { DrogasComponent } from './pages/drogas/drogas.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,7 +26,8 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

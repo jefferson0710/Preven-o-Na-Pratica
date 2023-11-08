@@ -1,1 +1,13 @@
 <app-navbar></app-navbar>
+
+<form action="" class="forms">
+  <form [formGroup]="contactForm" (ngSubmit)="submit()" class="pt-3">
+    <div class="form-content">
+      <select class="form-select" formControlName="id">
+        <option [ngValue]="0">Selecione...</option>
+        <option *ngFor="let item of drogas" [ngValue]="item.id">{{ item.name }}</option>
+      </select>
+      <button class="butao btn btn-primary" type="submit">Filtrar</button>
+    </div>
+  </form>
+</form>
