@@ -1,5 +1,7 @@
 /* styles.css */
-
+*{
+  box-sizing: border-box;
+}
 /* Estilos para centralizar o conteúdo na parte inferior da tela */
 body {
     display: flex;
@@ -12,18 +14,26 @@ body {
   
   .topicos {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    text-align: center;
   }
   
   .topicos > div {
-    flex: 0 0 calc(16% - 20px);
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
+    background-color: white;
+    width: auto;
+    border-radius: 40px;
+    margin-right: 2%;
+    padding: 40px 20px;
+    cursor: pointer; 
+    transition: 0.5s linear;
+    &:hover{
+        transition: 0.5s linear;
+        transform: scale(1.05);
+        background-color: #2980b9; 
+
+     }
   }
   button{
-    background-color: #3498db; 
+    background-color: black; 
     color: #ffffff; 
     border: none; 
     padding: 5px 10px; 
@@ -34,7 +44,18 @@ body {
     &:hover{
         transition: 0.5s linear;
         transform: scale(1.05);
-        background-color: #2980b9; 
+        background-color: black; 
 
+     }
+
+  }
+  .topicos h2{
+    color: black;
+    text-align: center;
+   }
+
+   @media only screen and (max-width: 768px){
+    .topicos{
+       width: 100%;
     }
-}
+  }
