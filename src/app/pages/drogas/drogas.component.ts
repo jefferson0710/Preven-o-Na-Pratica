@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { Renderer2 } from '@angular/core';
 
 
 
@@ -23,43 +24,45 @@ export class DrogasComponent {
     { id: 5, name: "Ecstasy" }
   ];
  
-  constructor(private fb:FormBuilder) {
+  constructor(private fb:FormBuilder,private renderer: Renderer2) {
 
     this.contactForm = this.fb.group({
       id: 0
     });
   }
+  
  
   ngOnInit() {
- 
-
+    this.setupModal();
   }
  
   submit() {
     this.numeroPagina = this.contactForm.value.id
     console.log(this.numeroPagina)
   }
+ private setupModal(): void {
+    document.addEventListener('DOMContentLoaded', () => {
+      const openModalBtn = document.getElementById('openModalBtn');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+      const modal = document.getElementById('myModal');
 
+      if (openModalBtn && closeModalBtn && modal) {
+        this.renderer.listen(openModalBtn, 'click', () => {
+          modal.style.display = 'block';
+        });
+
+        this.renderer.listen(closeModalBtn, 'click', () => {
+          modal.style.display = 'none';
+        });
+
+        this.renderer.listen(window, 'click', (event) => {
+          if (event.target === modal) {
+            modal.style.display = 'none';
+          }
+        });
+      }
+    });
+  }
+ 
 
 }
-document.addEventListener('DOMContentLoaded', function () {
-    const openModalBtn = document.getElementById('openModalBtn');
-    const closeModalBtn = document.getElementById('closeModalBtn');
-    const modal = document.getElementById('myModal');
-
-    if (openModalBtn && closeModalBtn && modal) {
-        openModalBtn.addEventListener('click', function () {
-            modal.style.display = 'block';
-        });
-
-        closeModalBtn.addEventListener('click', function () {
-            modal.style.display = 'none';
-        });
-
-        window.addEventListener('click', function (event) {
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
-    }
-});

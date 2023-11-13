@@ -5,7 +5,8 @@
     <div class="maconha">
       <img width="64" height="64"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADEElEQVR4nNWZXWhOcRzHP2zcYU3csEnKO7XcuKEW23CpVm5ELta8RCyUWj3LbrzGhQsrJZak1rzWkBC58NaQmGxEaS6Ykg1rjv71O3U6nec8//8553nO+X/r29Pz8v3/vt/nnP/5v0HxsRVoxnIsBv4IF2IxHgKO8D6WYq0nhMt6LL8ajvABlmFRQAiXC7AIR0OCHMIifAoJ8hFLMDckhMs5pTDyCNgDVETUN2sEaYrYdgXQIh4L4r0U+yn3c6VhsYsaQS4YtlkJHBZPSv9OR9TjKzoE7AbKNIu+1AjSq9lWudwdQz79DR3x8TzFnwI1BbTjgWGNIL+AcQXaWgY8y6M/ohNkQ4iBUWB/iIlZGiFczgzx0CTzs3zaRp0gszVMXAImBWhXGQSpDdBPBro0tOoPw6TDh1Fd9mk+XaNBkPU+7XTguYauHwOc0jTzBqjy6DYZBNno0VUDbzV1J02CrDMwpEbqGZ5FlK7OXWxVFZgJOD42mARRj71Bg8ZfAVOAvQaaFulnvQaar8AEDHHCoIDidaDN4PdtMh6Y1DhGBNQYFlH8VqTfOsKlRMS9CMWKxTvEQEMGAjjC1cTEkwyEeEwCMHkUF4trSAhXUgzRTYKolhlrqUMMy9xPC6oTtQO3ZB7zXagGxBfyj7QGrFNKwR6p3S3rnEGPv37x3O4+CK5moA/E5WV3s2AkA2ai8rd3r2xnBgxF5Q5/XzmXAVOOIc8GdfoyzR2QrLBLZumBmAicyYBJpwA7dKfz2zL6ABiJcvqltjWvZcC8I7wNzCcG6mXRNJaC+TGpXUeCWGK4/I3LQTmDTBQrgYEUrsgAsCKpENtlhzGtvjEqD59YaE0xgOOj8hIJuZiFPwBbgM/y/qB8FqfNXKlC/JWp92YZXBXuynd18pn67maM2zVnEmQesAvolCPlPs86wB0o1esX2QM+LdulQYdC7kzBP5BNFU2HtKHa8rbt1usTD+dlcqu8pYJ9Yk7tJ1uN5RLkNZajHPgB/PPt3FuJTrkqB7ActSansWQY6sxRHaaqsxR1YJo4/gMqPMPic/jYEAAAAABJRU5ErkJggg==">
       <h2>Maconha</h2>
-      <button type="button" class="btn btn-primary" [routerLink]="['sobrenos']">Saiba Mais sobre a maconha</button>
+        <button id="openModalBtn">Saiba Mais sobre a maconha</button>
+      
     </div>
     <div class="alcool">
       <img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/alcohol.png" alt="alcohol"/>
@@ -31,20 +32,28 @@
   </div>
 </body>
 
-<body>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModalBtn">&times;</span>
+    <h1>O que e a maconha?</h1>
+    <h2>A maconha (Cannabis sativa) é, sem dúvidas, uma das drogas mais polêmicas da atualidade. Isso se deve ao fato de que, apesar de ter uso recreativo e apresentar danos ao organismo, essa planta possui componentes que apresentam importância medicinal, sendo, portanto, uma planta que merece atenção.
+</h2> 
+<br> <h1>Como a maconha é utilizada</h1>
+      <h2>A maconha é uma planta da família Moraceae muito utilizada em todo o planeta, sendo considerada a droga ilícita mais utilizada no mundo. Seu consumo, quando comparada com outras drogas permitidas, perde apenas para o álcool e cigarro.
+        A principal forma de administração da maconha é a inalação (fumada), método que leva a um efeito rápido no organismo. Estima-se que em cerca de meia hora a maconha atinja seus níveis máximos no sangue do usuário. Além da inalação, muitas pessoas fazem uso da maconha, ingerindo-a."
+        </h2>
+        <br>
+        <h1>Maconha faz mal?</h1>
+        <h2>A maconha pode causar danos ao organismo, principalmente, quando o usuário faz uso de grande quantidade e em grande período de tempo. O abuso cada vez maior dessa substância está relacionado com o fato de que muitos acreditam que se trata de um produto natural e consequentemente não faz mal ou mesmo que a maconha seja uma droga considerada leve."</h2>
+        <h2>É importante salientar que a maconha causa alterações a curto e também a longo prazo no organismo. A seguir, temos um quadro com os efeitos mais comuns da maconha a curto prazo, entretanto, é muito importante destacar que esses efeitos tratam-se daqueles mais comumente relatados, não sendo observados, portanto, em todas as pessoas que fazem uso da maconha."</h2>
+        <br>
+        <h1> Estatisticas</h1>
+        <h2>Pesquisa Datafolha divulgada neste sábado (23.set.2023) mostra que 72% da população brasileira se diz contra a legalização do uso geral da maconha no Brasil, mesmo que de forma recreativa. Só 23% são a favor, enquanto 3% responderam ser indiferentes e 2% não souberam ou não quiseram responder. Por outro lado, o uso da cannabis para fins medicinais é apoiado por 76% e rejeitado por 22%. Outro 1% é indiferente e 2% não têm uma opinião sobre o assunto. A soma ultrapassa 100% por conta de arredondamentos....
+          Por outro lado, o uso da cannabis para fins medicinais é apoiado por 76% e rejeitado por 22%. Outro 1% é indiferente e 2% não têm uma opinião sobre o assunto. A soma ultrapassa 100% por conta de arredondamentos....
+        </h2>
+        <h2>Por outro lado, o uso da cannabis para fins medicinais é apoiado por 76% e rejeitado por 22%. Outro 1% é indiferente e 2% não têm uma opinião sobre o assunto. A soma ultrapassa 100% por conta de arredondamentos....</h2>
     
-  <button id="openModalBtn">Open Modal</button>
-  
-  <div id="myModal" class="modal">
-    <h2>Titulo</h2>
-    <div class="modal-content">
-      <h2>Título do Conteúdo</h2>
-      <span class="close" id="closeModalBtn">&times;</span>
-      <p>Este é um exemplo de texto no modal.</p>
-    </div>
+    <p>Este é um exemplo de texto no modal.</p>
   </div>
-  
-  <script src="script.js"></script>
-  
-  </body>
+</div>
   
