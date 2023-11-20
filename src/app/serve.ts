@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
     providedIn: 'root',
   })
 export class EmailService {
-  private apiKey = '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'; // Substitua pela sua chave de API Sendinblue
+  private apiKey = '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'; // Substitua pela sua chave de API Sendinblue
   private apiUrl = 'https://api.sendinblue.com/v3/smtp/email';
 
   constructor(private http: HttpClient) {}
@@ -18,6 +18,7 @@ export class EmailService {
     };
 
     const body = {
+      sender: { name: 'Prevenção na Prática', email: 'praticaprevencao@gmail.com' },
       to: [{ email: destinatario }],
       subject: assunto,
       htmlContent: conteudo,

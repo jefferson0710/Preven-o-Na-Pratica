@@ -6,6 +6,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { FormularioComponent } from './pages/formulario/formulario.component';
 import { DrogasComponent } from './pages/drogas/drogas.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -29,8 +31,10 @@ import { EmailService } from './serve';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

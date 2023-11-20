@@ -11,11 +11,10 @@ import { Renderer2 } from '@angular/core';
   styleUrls: ['./drogas.component.scss']
 })
 export class DrogasComponent {
-
   numeroPagina = 0;
   contactForm: FormGroup;
 
- 
+
   drogas = [
     { id: 1, name: "Maconha" },
     { id: 2, name: "Crack" },
@@ -23,22 +22,22 @@ export class DrogasComponent {
     { id: 4, name: "Cocaina" },
     { id: 5, name: "Ecstasy" }
   ];
- 
+
   constructor(private fb:FormBuilder,private renderer: Renderer2) {
 
     this.contactForm = this.fb.group({
       id: 0
     });
   }
-  
- 
+
+
   ngOnInit() {
+
     this.setupModal();
   }
- 
+
   submit() {
     this.numeroPagina = this.contactForm.value.id
-    console.log(this.numeroPagina)
   }
  private setupModal(): void {
     document.addEventListener('DOMContentLoaded', () => {
@@ -63,6 +62,6 @@ export class DrogasComponent {
       }
     });
   }
- 
+
 
 }

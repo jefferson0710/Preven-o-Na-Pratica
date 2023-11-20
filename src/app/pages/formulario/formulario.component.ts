@@ -8,16 +8,17 @@ import { EmailService } from 'src/app/serve';
   styleUrls: ['./formulario.component.scss']
 })
 export class FormularioComponent {
-  emailDestino: any; 
-  experienciaUsuario: any; 
+  emailDestino: string = '';
+  experienciaUsuario: string = '';
 
+  constructor(private http: HttpClient) {}
 
   enviarEmail() {
-    const emailService = new EmailService();
+    const emailService = new EmailService(this.http);
     const destinatario = this.emailDestino;
     const assunto = 'Obrigado por comparilha sua Experiencia';
     const conteudo = `<p>${this.experienciaUsuario} </p>`;
-    
+
 
     emailService.enviarEmail(destinatario, assunto, conteudo).subscribe(
       (resposta) => {
@@ -28,6 +29,5 @@ export class FormularioComponent {
       }
     );
   }
-  
-}
 
+}

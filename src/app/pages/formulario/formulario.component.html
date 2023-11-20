@@ -1,20 +1,20 @@
 <app-navbar></app-navbar>
-<form (submit)="enviarEmail()" class="forms">
+<form class="forms">
     <div class="title">
-        <h1 class="tituloformulario">Compartilhe a sua <span>Experiência!</span></h1>
+        <h1 class="tituloformulario">Compartilhe a sua <span>experiência!</span></h1>
     </div>
     <div class="form-content">
         <label for="email">E-mail:</label>
-        <input type="email" class="form-control" [value]="emailDestino" id="email" placeholder="Digite seu e-mail...">
+        <input type="email" class="form-control" [(ngModel)]="emailDestino" id="email" placeholder="Digite seu e-mail..." [ngModelOptions]="{ standalone: true }" >
         <label for="nome">Nome:</label>
         <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome...">
         <label for="nome">Idade:</label>
         <input type="number" class="form-control" id="number" placeholder="Digite a sua idade...">
-        <label for="experiencia">Experiência:</label>
-        <textarea class="form-control" [value]="experienciaUsuario" id="experiencia" rows="3" placeholder="Compartilhe sua experiência conosco.."></textarea>
+        <label for="experiencia">Compartilhhe sua experiência:</label>
+        <textarea class="form-control" [(ngModel)]="experienciaUsuario" id="experiencia" rows="3" placeholder="Compartilhe sua experiência conosco.." [ngModelOptions]="{ standalone: true }" ></textarea>
     </div>
     <div class="butao">
-        <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+        <button type="button" (click)="enviarEmail()" class="btn btn-primary mt-2">Enviar</button>
     </div>
-        
+
 </form>
