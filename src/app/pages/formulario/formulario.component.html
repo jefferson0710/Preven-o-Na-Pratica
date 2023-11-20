@@ -1,18 +1,17 @@
 <app-navbar></app-navbar>
-
-<form action="" class="forms">
+<form (submit)="enviarEmail()" class="forms">
     <div class="title">
         <h1 class="tituloformulario">Compartilhe a sua <span>Experiência!</span></h1>
     </div>
     <div class="form-content">
         <label for="email">E-mail:</label>
-        <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail...">
+        <input type="email" class="form-control" [value]="emailDestino" id="email" placeholder="Digite seu e-mail...">
         <label for="nome">Nome:</label>
         <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome...">
         <label for="nome">Idade:</label>
         <input type="number" class="form-control" id="number" placeholder="Digite a sua idade...">
         <label for="experiencia">Experiência:</label>
-        <textarea class="form-control" id="experiencia" rows="3" placeholder="Compartilhe sua experiência conosco.."></textarea>
+        <textarea class="form-control" [value]="experienciaUsuario" id="experiencia" rows="3" placeholder="Compartilhe sua experiência conosco.."></textarea>
     </div>
     <div class="butao">
         <button type="submit" class="btn btn-primary mt-2">Enviar</button>

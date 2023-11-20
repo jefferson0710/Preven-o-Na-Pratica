@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { EmailService } from './serve';
 
 @NgModule({
   declarations: [
@@ -19,10 +20,10 @@ import { FooterComponent } from './components/footer/footer.component';
     SobrenosComponent,
     ContatoComponent,
     HomeComponent,
-    FormularioComponent,
     DrogasComponent,
     NavbarComponent,
     FooterComponent,
+    FormularioComponent,
   ],
   imports: [
     BrowserModule,
