@@ -1,8 +1,8 @@
-/* styles.css */
+
 *{
   box-sizing: border-box;
 }
-/* Estilos para centralizar o conteúdo na parte inferior da tela */
+
 body {
     display: flex;
     flex-direction: column;
@@ -11,40 +11,40 @@ body {
     height: 80vh;
     margin: 0;
   }
-  
+
   .topicos {
     display: flex;
     text-align: center;
   }
-  
+
   .topicos > div {
     background-color: white;
     width: auto;
     border-radius: 40px;
     margin-right: 2%;
     padding: 40px 20px;
-    cursor: pointer; 
+    cursor: pointer;
     transition: 0.5s linear;
     &:hover{
         transition: 0.5s linear;
         transform: scale(1.05);
-        background-color: #2980b9; 
+        background-color: #2980b9;
 
      }
   }
   button{
-    background-color: black; 
-    color: #ffffff; 
-    border: none; 
-    padding: 5px 10px; 
-    border-radius: 5px; 
-    font-size: 14px; 
-    cursor: pointer; 
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
     transition: 0.5s linear;
     &:hover{
         transition: 0.5s linear;
         transform: scale(1.05);
-        background-color: black; 
+        background-color: black;
 
      }
 
@@ -73,7 +73,7 @@ body {
     height: 100%;
     background-color: transparent;
     text-align: justify;
-   
+
 }
 
 .modal-content {
@@ -83,8 +83,8 @@ body {
     border: 1px solid #888;
     width:50%;
     height: 60vh;
-    border-radius: 10px;
-    overflow-y: scroll; //pode-se usar auto para deixar o browser decidir quando usar.
+    border-radius: 15px;
+    overflow-y: scroll;
 
 }
 

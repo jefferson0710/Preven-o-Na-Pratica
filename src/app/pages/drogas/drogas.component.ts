@@ -11,17 +11,11 @@ import { Renderer2 } from '@angular/core';
   styleUrls: ['./drogas.component.scss']
 })
 export class DrogasComponent {
-  numeroPagina = 0;
+
   contactForm: FormGroup;
 
 
-  drogas = [
-    { id: 1, name: "Maconha" },
-    { id: 2, name: "Crack" },
-    { id: 3, name: "Alcool" },
-    { id: 4, name: "Cocaina" },
-    { id: 5, name: "Ecstasy" }
-  ];
+
 
   constructor(private fb:FormBuilder,private renderer: Renderer2) {
 
@@ -36,21 +30,21 @@ export class DrogasComponent {
     this.setupModal();
   }
 
-  submit() {
-    this.numeroPagina = this.contactForm.value.id
-  }
  private setupModal(): void {
     document.addEventListener('DOMContentLoaded', () => {
       const openModalBtn = document.getElementById('openModalBtn');
+      const openModalBtnalcool = document.getElementById('openModalBtnalcool');
+      const closeModalBtnalcool = document.getElementById('closeModalBtnalcool');
       const closeModalBtn = document.getElementById('closeModalBtn');
       const modal = document.getElementById('myModal');
 
-      if (openModalBtn && closeModalBtn && modal) {
-        this.renderer.listen(openModalBtn, 'click', () => {
+
+      if (openModalBtn && closeModalBtn && modal && closeModalBtnalcool && openModalBtnalcool) {
+        this.renderer.listen( openModalBtnalcool && openModalBtn, 'click', () => {
           modal.style.display = 'block';
         });
 
-        this.renderer.listen(closeModalBtn, 'click', () => {
+        this.renderer.listen(closeModalBtn && closeModalBtnalcool, 'click', () => {
           modal.style.display = 'none';
         });
 
