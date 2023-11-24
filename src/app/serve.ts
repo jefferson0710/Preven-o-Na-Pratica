@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
     providedIn: 'root',
   })
 export class EmailService {
-  private apiKey = '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'; // Substitua pela sua chave de API Sendinblue
+  private apiKey = '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'; // Substitua pela sua chave de API Sendinblue
   private apiUrl = 'https://api.sendinblue.com/v3/smtp/email';
 
   constructor(private http: HttpClient) {}
