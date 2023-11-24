@@ -33,18 +33,15 @@ export class DrogasComponent {
  private setupModal(): void {
     document.addEventListener('DOMContentLoaded', () => {
       const openModalBtn = document.getElementById('openModalBtn');
-      const openModalBtnalcool = document.getElementById('openModalBtnalcool');
-      const closeModalBtnalcool = document.getElementById('closeModalBtnalcool');
       const closeModalBtn = document.getElementById('closeModalBtn');
       const modal = document.getElementById('myModal');
 
-
-      if (openModalBtn && closeModalBtn && modal && closeModalBtnalcool && openModalBtnalcool) {
-        this.renderer.listen( openModalBtnalcool && openModalBtn, 'click', () => {
+      if (openModalBtn && closeModalBtn && modal) {
+        this.renderer.listen( openModalBtn, 'click', () => {
           modal.style.display = 'block';
         });
 
-        this.renderer.listen(closeModalBtn && closeModalBtnalcool, 'click', () => {
+        this.renderer.listen(closeModalBtn, 'click', () => {
           modal.style.display = 'none';
         });
 
@@ -54,6 +51,7 @@ export class DrogasComponent {
           }
         });
       }
+
     });
   }
 
