@@ -28,6 +28,7 @@ export class DrogasComponent {
   ngOnInit() {
 
     this.setupModal();
+    this.setupModal2();
   }
 
  private setupModal(): void {
@@ -54,6 +55,32 @@ export class DrogasComponent {
 
     });
   }
+  private setupModal2(): void {
+    document.addEventListener('DOMContentLoaded', () => {
+      const openModalBtnalcool = document.getElementById('openModalBtnalcool');
+      const closeModalBtnalcool = document.getElementById('closeModalBtnalcool');
+      const modal = document.getElementById('myModalalcool');
+
+      if (openModalBtnalcool && closeModalBtnalcool && modal) {
+        this.renderer.listen( openModalBtnalcool, 'click', () => {
+          modal.style.display = 'block';
+        });
+
+        this.renderer.listen(closeModalBtnalcool, 'click', () => {
+          modal.style.display = 'none';
+        });
+
+        this.renderer.listen(window, 'click', (event) => {
+          if (event.target === modal) {
+            modal.style.display = 'none';
+          }
+        });
+      }
+
+    });
+  }
 
 
 }
+
+
