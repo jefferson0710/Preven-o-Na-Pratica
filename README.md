@@ -1,5 +1,5 @@
 # PrevencaoNaPratica
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bf3862dd-de1f-4b7d-8cb3-f533581ff1ae/deploy-status)](https://app.netlify.com/sites/funny-axolotl-d4e6f4/deploys)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
 
 ## Development server
