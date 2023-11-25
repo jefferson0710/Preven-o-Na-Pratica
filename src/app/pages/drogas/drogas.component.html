@@ -5,12 +5,12 @@
     <div class="maconha">
       <img width="64" height="64"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADEElEQVR4nNWZXWhOcRzHP2zcYU3csEnKO7XcuKEW23CpVm5ELta8RCyUWj3LbrzGhQsrJZak1rzWkBC58NaQmGxEaS6Ykg1rjv71O3U6nec8//8553nO+X/r29Pz8v3/vt/nnP/5v0HxsRVoxnIsBv4IF2IxHgKO8D6WYq0nhMt6LL8ajvABlmFRQAiXC7AIR0OCHMIifAoJ8hFLMDckhMs5pTDyCNgDVETUN2sEaYrYdgXQIh4L4r0U+yn3c6VhsYsaQS4YtlkJHBZPSv9OR9TjKzoE7AbKNIu+1AjSq9lWudwdQz79DR3x8TzFnwI1BbTjgWGNIL+AcQXaWgY8y6M/ohNkQ4iBUWB/iIlZGiFczgzx0CTzs3zaRp0gszVMXAImBWhXGQSpDdBPBro0tOoPw6TDh1Fd9mk+XaNBkPU+7XTguYauHwOc0jTzBqjy6DYZBNno0VUDbzV1J02CrDMwpEbqGZ5FlK7OXWxVFZgJOD42mARRj71Bg8ZfAVOAvQaaFulnvQaar8AEDHHCoIDidaDN4PdtMh6Y1DhGBNQYFlH8VqTfOsKlRMS9CMWKxTvEQEMGAjjC1cTEkwyEeEwCMHkUF4trSAhXUgzRTYKolhlrqUMMy9xPC6oTtQO3ZB7zXagGxBfyj7QGrFNKwR6p3S3rnEGPv37x3O4+CK5moA/E5WV3s2AkA2ai8rd3r2xnBgxF5Q5/XzmXAVOOIc8GdfoyzR2QrLBLZumBmAicyYBJpwA7dKfz2zL6ABiJcvqltjWvZcC8I7wNzCcG6mXRNJaC+TGpXUeCWGK4/I3LQTmDTBQrgYEUrsgAsCKpENtlhzGtvjEqD59YaE0xgOOj8hIJuZiFPwBbgM/y/qB8FqfNXKlC/JWp92YZXBXuynd18pn67maM2zVnEmQesAvolCPlPs86wB0o1esX2QM+LdulQYdC7kzBP5BNFU2HtKHa8rbt1usTD+dlcqu8pYJ9Yk7tJ1uN5RLkNZajHPgB/PPt3FuJTrkqB7ActSansWQY6sxRHaaqsxR1YJo4/gMqPMPic/jYEAAAAABJRU5ErkJggg==">
       <h2>Maconha</h2>
-        <button id="openModalBtn">Saiba Mais sobre a maconha</button>
+        <button type="button" (click)="openModal(maconha)">Saiba Mais sobre a maconha</button>
     </div>
     <div class="alcool">
       <img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/alcohol.png" alt="alcohol"/>
       <h2>Bebida Alcoólica</h2>
-      <button id="openModalBtnalcool">Saiba Mais sobre o Álcool</button>
+      <button type="button" (click)="openModal(alcool)">Saiba Mais sobre a maconha</button>
     </div>
     <div class="cocaina">
      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACxUlEQVR4nO2bPWgUQRTHfwhGFCQqRAhCRBFRLNRgISoJWIqKooeFjWlO8AobvXQiVkmhVoEErCxioYIoiB+ojYJo1EJSxuLws/CjiJ85b2XkCcuyd97uze7O7swf/nDHsbPv/ee9N3NvduH/2AbcAb4CXk6obL0NbKVD7AZ+GeBQXCrbd8V1vgt4a4ATnfKN+BIZAwYYr4s74ghw0ADDdVH50jaWA6uBigGG62JFfFK+tcQg8NsAg5NiXVK7KTYDXwwwNCl+BjZFSQcHm7ESeA7M5JzPgL44AmyRolGEwqd8iYUeWT7yTOWDQxz0AFeAuznn5bhRcMCA/NVF5UtklAwwXBeVL06AqCgZMHMuAnApgKsBuCJIs4bnS+AGMA6MtOhhFmIVmBVnK/KfPqzRebxoArwDzgI7gQUhNs4Hen3fy0UQoC4zvU8c9GMdcBSYAJ4CP4AGsLcIAnwDxoBVATs2AmeA6RbXDudZgPfA6UDHdiEwJLPczhi5E2AOuAkcDuT2CqnmHyOOlwsBPgCXgCMh/XnVsbkI/Iw5tjECfAdqwGNxVuXuoZC8VlgiS9oLDeKmKsA1WXqW+ri4zTHXylp9S8TSFV2pClBu49pFwAZgD1CVaJjRnFKZC7AGuA48AqYklGsJPEihtrxXgYemCXAiwRltdrI7YZIAwykJ4K8v+20UYEjuNw+YtFGABvDApK1wWaMAdU3Hb7kU4LXsJ3rlQSbrBLjnu9d9GwVoAOeA8/LZOgE8jXQCULAImAVOig1TNkbAqUCTpGGbAMcC7bE52wR4BfQDy4ALNqaAF5FOAFwE/IVLAVwNwBVBUloFqgZU/3+splkDRuT3funSZP0w9LS856AwmoYANaAb89AttiUugAc8AbaHnN9ngS6xpdVJshGHo16GdALgIiA6SgaErksBMqwB6+U9u6xnr1N+El9C8QcqaJbbBe2XJQAAAABJRU5ErkJggg==">
@@ -29,34 +29,6 @@
       <p></p>
     </div>
   </div>
-
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close" id="closeModalBtn">&times;</span>
-    <h1>O que e a maconha?</h1>
-    <br>
-    <h2>A maconha (Cannabis sativa) é, sem dúvidas, uma das drogas mais polêmicas da atualidade. Isso se deve ao fato de que, apesar de ter uso recreativo e apresentar danos ao organismo, essa planta possui componentes que apresentam importância medicinal, sendo, portanto, uma planta que merece atenção.
-</h2>
-<br>
- <h1>Como a maconha é utilizada</h1>
- <br>
-      <h2>A maconha é uma planta da família Moraceae muito utilizada em todo o planeta, sendo considerada a droga ilícita mais utilizada no mundo. Seu consumo, quando comparada com outras drogas permitidas, perde apenas para o álcool e cigarro.
-        A principal forma de administração da maconha é a inalação (fumada), método que leva a um efeito rápido no organismo. Estima-se que em cerca de meia hora a maconha atinja seus níveis máximos no sangue do usuário. Além da inalação, muitas pessoas fazem uso da maconha, ingerindo-a."
-        </h2>
-        <br>
-        <h1>Maconha faz mal?</h1>
-        <br>
-        <h2>A maconha pode causar danos ao organismo, principalmente, quando o usuário faz uso de grande quantidade e em grande período de tempo. O abuso cada vez maior dessa substância está relacionado com o fato de que muitos acreditam que se trata de um produto natural e consequentemente não faz mal ou mesmo que a maconha seja uma droga considerada leve."</h2>
-        <h2>É importante salientar que a maconha causa alterações a curto e também a longo prazo no organismo. A seguir, temos um quadro com os efeitos mais comuns da maconha a curto prazo, entretanto, é muito importante destacar que esses efeitos tratam-se daqueles mais comumente relatados, não sendo observados, portanto, em todas as pessoas que fazem uso da maconha."</h2>
-        <br>
-        <h1> Estatisticas</h1>
-        <br>
-        <h2>Pesquisa Datafolha divulgada neste sábado (23.set.2023) mostra que 72% da população brasileira se diz contra a legalização do uso geral da maconha no Brasil, mesmo que de forma recreativa. Só 23% são a favor, enquanto 3% responderam ser indiferentes e 2% não souberam ou não quiseram responder. Por outro lado, o uso da cannabis para fins medicinais é apoiado por 76% e rejeitado por 22%. Outro 1% é indiferente e 2% não têm uma opinião sobre o assunto. A soma ultrapassa 100% por conta de arredondamentos....
-          Por outro lado, o uso da cannabis para fins medicinais é apoiado por 76% e rejeitado por 22%. Outro 1% é indiferente e 2% não têm uma opinião sobre o assunto. A soma ultrapassa 100% por conta de arredondamentos....
-        </h2>
-        <h2>Por outro lado, o uso da cannabis para fins medicinais é apoiado por 76% e rejeitado por 22%. Outro 1% é indiferente e 2% não têm uma opinião sobre o assunto. A soma ultrapassa 100% por conta de arredondamentos....</h2>
-  </div>
-</div>
 
 <div id="myModalalcool" class="modal">
   <div class="modal-content">
@@ -84,7 +56,7 @@
         <h2>A partir dessas definições, é considerado moderado o consumo de, no máximo, duas doses em único dia ou 14 doses por semana para os homens. Para as mulheres, as quantidades são de uma dose em 24 horas ou sete doses durante sete dias.
 
           Já a Vigilância de Fatores de Risco e Proteção para Doenças Crônicas por Inquérito Telefônico (Vigitel), do Ministério da Saúde, define consumo abusivo quando homens ingerem cinco ou mais doses ou quando mulheres bebem quatro ou mais doses em uma única ocasião no mês — situações também chamadas de Beber Pesado Episódico (BPE).
-          
+
           Essas definições constatam, portanto, que muitos brasileiros não estão bebendo com moderação. De acordo com a Vigitel 2021, o padrão de consumo de 18,4% da população brasileira é de bebedor abusivo. Entre os homens, esse percentual é de 25,6%. Em 2010, esse número era de 27%. A ingestão de bebida alcoólica entre as mulheres, no entanto, aumentou nesse período. Em 2010, 10,5% delas tinham um consumo abusivo. Em 2021, esse percentual subiu para 12,7%.</h2>
   </div>
 </div>
@@ -114,53 +86,53 @@ Geralmente, o nome cocaína é utilizado para se referir ao cloridrato de cocaí
         <H2>A cocaína é uma substância estimulante do sistema nervoso central. Ela atua bloqueando a recaptação da dopamina, fazendo com que ocorra um acúmulo desse neurotransmissor no sistema de recompensa cerebral, fenômeno responsável pelos efeitos agudos da droga e também por sua dependência.
 
           A dopamina é armazenada em terminais pré-sinápticos e é liberada na fenda sináptica após algum estímulo neuronal. Na fenda, ela sofre catabolismo e recaptação para o terminal pré-sináptico. Essa recaptação é realizada por transportadores dopaminérgicos.
-          
+
           Logo após o uso da droga, o usuário experimenta estes efeitos:
-          
+
           euforia;
-          
+
           aumento do estado de vigília;
-          
+
           aumento da sensação de autoconfiança, prazer e bem-estar;
-          
+
           aumento do estado de alerta e da concentração;
-          
+
           aumento das sensações sexuais;
-          
+
           aceleração do pensamento.
-          
+
           Com o passar do tempo, a pessoa pode apresentar sintomas indesejáveis, como:
-          
+
           fadiga;
-          
+
           mudança repentina do estado de ânimo;
-          
+
           irritabilidade;
-          
+
           aumento da impulsividade.
-          
+
           Em relação aos sintomas físicos, percebe-se um aumento de:
-          
+
           frequência cardíaca;
-          
+
           sudorese;
-          
+
           ritmo respiratório;
-          
+
           temperatura do corpo.
-          
+
           O usuário também pode apresentar hipertensão arterial, pupilas dilatadas, e desenvolver hiperatividade motora, tremores nas mãos e espasmos musculares.
-          
+
           O uso contínuo pode levar a distúrbios psiquiátricos. Alguns dos problemas relatados são:
-          
+
           depressão;
-          
+
           ansiedade;
-          
+
           irritabilidade;
-          
+
           delírios;
-          
+
           paranoia</H2>
         <br>
         <h1> Estatisticas</h1>
@@ -177,7 +149,77 @@ O estudo indica também que 2 milhões de brasileiros fumaram crack ou merla em 
         <h2>A partir dessas definições, é considerado moderado o consumo de, no máximo, duas doses em único dia ou 14 doses por semana para os homens. Para as mulheres, as quantidades são de uma dose em 24 horas ou sete doses durante sete dias.
 
           Já a Vigilância de Fatores de Risco e Proteção para Doenças Crônicas por Inquérito Telefônico (Vigitel), do Ministério da Saúde, define consumo abusivo quando homens ingerem cinco ou mais doses ou quando mulheres bebem quatro ou mais doses em uma única ocasião no mês — situações também chamadas de Beber Pesado Episódico (BPE).
-          
+
           Essas definições constatam, portanto, que muitos brasileiros não estão bebendo com moderação. De acordo com a Vigitel 2021, o padrão de consumo de 18,4% da população brasileira é de bebedor abusivo. Entre os homens, esse percentual é de 25,6%. Em 2010, esse número era de 27%. A ingestão de bebida alcoólica entre as mulheres, no entanto, aumentou nesse período. Em 2010, 10,5% delas tinham um consumo abusivo. Em 2021, esse percentual subiu para 12,7%.</h2>
   </div>
 </div>
+
+<ng-template #maconha let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title" style="color: black; font-size: 30px;">O que e a maconha?</h4>
+    <button type="button" class="close" aria-label="Fechar" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="color: black;">
+    <h2>A maconha (Cannabis sativa) é, sem dúvidas, uma das drogas mais polêmicas da atualidade. Isso se deve ao fato de que, apesar de ter uso recreativo e apresentar danos ao organismo, essa planta possui componentes que apresentam importância medicinal, sendo, portanto, uma planta que merece atenção.
+</h2>
+<br>
+ <h1>Como a maconha é utilizada</h1>
+ <br>
+      <h2>A maconha é uma planta da família Moraceae muito utilizada em todo o planeta, sendo considerada a droga ilícita mais utilizada no mundo. Seu consumo, quando comparada com outras drogas permitidas, perde apenas para o álcool e cigarro.
+        A principal forma de administração da maconha é a inalação (fumada), método que leva a um efeito rápido no organismo. Estima-se que em cerca de meia hora a maconha atinja seus níveis máximos no sangue do usuário. Além da inalação, muitas pessoas fazem uso da maconha, ingerindo-a.
+        </h2>
+        <br>
+        <h1>Maconha faz mal?</h1>
+        <br>
+        <h2>A maconha pode causar danos ao organismo, principalmente, quando o usuário faz uso de grande quantidade e em grande período de tempo. O abuso cada vez maior dessa substância está relacionado com o fato de que muitos acreditam que se trata de um produto natural e consequentemente não faz mal ou mesmo que a maconha seja uma droga considerada leve."</h2>
+        <h2>É importante salientar que a maconha causa alterações a curto e também a longo prazo no organismo. A seguir, temos um quadro com os efeitos mais comuns da maconha a curto prazo, entretanto, é muito importante destacar que esses efeitos tratam-se daqueles mais comumente relatados, não sendo observados, portanto, em todas as pessoas que fazem uso da maconha."</h2>
+        <br>
+        <h1> Estatisticas</h1>
+        <br>
+        <h2>Pesquisa Datafolha divulgada neste sábado (23.set.2023) mostra que 72% da população brasileira se diz contra a legalização do uso geral da maconha no Brasil, mesmo que de forma recreativa. Só 23% são a favor, enquanto 3% responderam ser indiferentes e 2% não souberam ou não quiseram responder. Por outro lado, o uso da cannabis para fins medicinais é apoiado por 76% e rejeitado por 22%. Outro 1% é indiferente e 2% não têm uma opinião sobre o assunto. A soma ultrapassa 100% por conta de arredondamentos....
+          Por outro lado, o uso da cannabis para fins medicinais é apoiado por 76% e rejeitado por 22%. Outro 1% é indiferente e 2% não têm uma opinião sobre o assunto. A soma ultrapassa 100% por conta de arredondamentos.
+        </h2>
+        <h2>Por outro lado, o uso da cannabis para fins medicinais é apoiado por 76% e rejeitado por 22%. Outro 1% é indiferente e 2% não têm uma opinião sobre o assunto. A soma ultrapassa 100% por conta de arredondamentos.</h2>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Fechar')">Fechar</button>
+  </div>
+</ng-template>
+<ng-template #alcool let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title" style="color: black; font-size: 30px;">O que e Bebida alcoólica?</h4>
+    <button type="button" class="close" aria-label="Fechar" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="color: black;">
+    <h2>As bebidas alcoólicas são bebidas que contêm etanol em sua composição, produzido pela fermentação alcoólica de açúcares contidos em frutas, grãos ou caules como a cana-de-açúcar. Na maior parte dos países trata-se de uma droga lícita, muito embora seja uma droga psicoativa do tipo depressora e haja restrições para seu consumo em diversos níveis, especialmente no que tange a idade legal para seu consumo. O consumo excessivo de bebidas alcoólicas leva à embriaguez e à ressaca, podendo levar ainda o indivíduo a desenvolver doenças como o alcoolismo, cirrose hepática e mais de 10 tipos distintos de câncer. Apesar dos malefícios causados à saúde humana e das milhares de mortes que o álcool causa no trânsito, muitos países ainda permitem a publicidade de bebidas alcoólicas e o álcool é costumeiramente celebrado por jovens e pela música. Pessoas que não ingerem bebidas alcoólicas são chamadas de abstêmios.</h2>
+        <br>
+        <h1>Efeitos do álcool
+        </h1>
+        <br>
+        <h2>Foi comprovado que o consumo não moderado de álcool está associado a um maior risco de doença de Alzheimer e outras doenças senis, angina de peito, fraturas e osteoporose, diabetes, úlcera duodenal, cálculo biliar, hepatite A, linfomas, pedras nos rins, Transtorno Bipolar, síndrome metabólica, câncer no pâncreas, doença de Parkinson, artrite reumática e gastrite. O consumo não moderado também pode dificultar a memória e o aprendizado, e até piora a pontuação em testes de QI.
+          Todavia, um estudo sobre vinhos publicado na American Journal of Clinical Nutrition descobriu que vinhos sem álcool possuem os mesmos benefícios do vinho comum, e que o álcool pode reduzir os benefícios. Acredita-se que sejam os flavonoides presentes no vinho da uva que protegem contra doenças do coração e alguns tipos de câncer. Porém, um estudo recente veio demonstrar que o consumo de álcool é culpado por mais casos de cancro do que se julgaria. Segundo o estudo, mais de 2 600 casos de câncer da mama e quase 1 300 casos de câncer da boca estariam relacionados com o hábito do consumo de álcool na Austrália.</h2>
+        <br>
+        <h1> Estatisticas</h1>
+        <br>
+        <h2>A cada hora cerca de duas mulheres morreram em razão do uso nocivo de álcool em 2020. Ao todo, 15.490 brasileiras perderam a vida por motivos atribuídos ao álcool naquele ano. A faixa etária mais afetada foi a das mulheres de 55 anos e mais (70,9%), seguida por 35 a 54 anos (19,3%), 18 a 34 anos (7,3%) e de 0 a 17 anos (2,5%). Os dados fazem parte de estudo inédito, divulgado nesta semana pelo Centro de Informações sobre Saúde e Álcool (Cisa) para marcar o Dia Nacional de Combate ao Alcoolismo.
+
+        </h2>
+        <h2>
+          A ingestão de bebida alcoólica durante o fim de semana, em aniversários, casamentos e formaturas é comum para muitas pessoas no Brasil. Em épocas como o Carnaval, por exemplo, muitas se sentem ainda mais estimuladas a beber álcool em desfiles, blocos, festas e praias. O que poucos sabem é se esse consumo é realmente moderado ou se já se tornou nocivo para as saúdes física e mental.
+
+          De acordo com o Centro de Informações sobre Saúde e Álcool (CISA), uma dose padrão de bebida alcoólica no Brasil equivale a 14g de álcool puro. Isso corresponde a 350 ml de cerveja, 150 ml de vinho ou 45 ml de destilado (vodca, uísque, cachaça, gin e tequila, por exemplo).
+        </h2>
+        <h2>A partir dessas definições, é considerado moderado o consumo de, no máximo, duas doses em único dia ou 14 doses por semana para os homens. Para as mulheres, as quantidades são de uma dose em 24 horas ou sete doses durante sete dias.
+
+          Já a Vigilância de Fatores de Risco e Proteção para Doenças Crônicas por Inquérito Telefônico (Vigitel), do Ministério da Saúde, define consumo abusivo quando homens ingerem cinco ou mais doses ou quando mulheres bebem quatro ou mais doses em uma única ocasião no mês — situações também chamadas de Beber Pesado Episódico (BPE).
+
+          Essas definições constatam, portanto, que muitos brasileiros não estão bebendo com moderação. De acordo com a Vigitel 2021, o padrão de consumo de 18,4% da população brasileira é de bebedor abusivo. Entre os homens, esse percentual é de 25,6%. Em 2010, esse número era de 27%. A ingestão de bebida alcoólica entre as mulheres, no entanto, aumentou nesse período. Em 2010, 10,5% delas tinham um consumo abusivo. Em 2021, esse percentual subiu para 12,7%.</h2>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Fechar')">Fechar</button>
+  </div>
+</ng-template>
