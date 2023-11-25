@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
-    
+
 }:root {
     --bg-color: #081b29;
     --second-bg-color: #112e42;
@@ -54,16 +55,16 @@ html {
 
             }
 
-            
+
         }
-        input[type=number]::-webkit-inner-spin-button { 
+        input[type=number]::-webkit-inner-spin-button {
             -webkit-appearance: none;
-                
+
         }
-        input[type=number] { 
+        input[type=number] {
             -moz-appearance: textfield;
             appearance: textfield;
-            
+
         }
         label{
             width: 95%;
@@ -91,21 +92,41 @@ html {
     text-align: center;
     margin: 10px;
     button{
-        background-color: #3498db; 
-        color: #ffffff; 
-        border: none; 
-        padding: 10px 20px; 
-        border-radius: 5px; 
-        font-size: 16px; 
-        cursor: pointer; 
+        background-color: #3498db;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
         transition: 0.5s linear;
         &:hover{
             transition: 0.5s linear;
             transform: scale(1.05);
-            background-color: #2980b9; 
+            background-color: #2980b9;
 
         }
     }
-    
+
 }
 
+.toast-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.toast-error {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+
+
+.custom-toast {
+  padding: 15px;
+  font-size: 15px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+ border-radius: 10rem;
+}
