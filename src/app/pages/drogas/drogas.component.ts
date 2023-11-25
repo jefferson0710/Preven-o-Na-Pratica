@@ -29,6 +29,7 @@ export class DrogasComponent {
 
     this.setupModal();
     this.setupModal2();
+    this.setupModal3();
   }
 
  private setupModal(): void {
@@ -79,7 +80,30 @@ export class DrogasComponent {
 
     });
   }
+  private setupModal3(): void {
+    document.addEventListener('DOMContentLoaded', () => {
+      const openModalBtncocaine = document.getElementById('openModalBtncocaina');
+      const closeModalBtncocaine= document.getElementById('closeModalBtncocaina');
+      const modal = document.getElementById('myModalcocaina');
 
+      if (openModalBtncocaine && closeModalBtncocaine && modal) {
+        this.renderer.listen( openModalBtncocaine, 'click', () => {
+          modal.style.display = 'block';
+        });
+
+        this.renderer.listen(closeModalBtncocaine, 'click', () => {
+          modal.style.display = 'none';
+        });
+
+        this.renderer.listen(window, 'click', (event) => {
+          if (event.target === modal) {
+            modal.style.display = 'none';
+          }
+        });
+      }
+
+    });
+  }
 
 }
 
