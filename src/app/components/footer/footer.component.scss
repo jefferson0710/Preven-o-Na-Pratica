@@ -1,13 +1,24 @@
+
 footer {
-  background-color: calc(--bg-color);
-  color: white;
+  background-color: calc(--bg-color); /* Set background color */
+  color: white; /* Set text color */
   text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  margin-bottom: 60px;
+  padding: 20px;
+}
+
+/* Adjust text style */
+footer p {
+  font-size: 14px;
   margin: 0;
-  padding: 0;
- 
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 10px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
 }

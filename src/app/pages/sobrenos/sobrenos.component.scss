@@ -1,38 +1,87 @@
-.sobre{
-    margin: 20rem;
-    max-width: 90rem;
+/* styles.scss ou styles.css */
+
+.sobre {
+  margin: 20rem;
+  max-width: 90rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: justify;
+
+  h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .saude {
+    max-width: 100%;
+    margin: 2rem 40rem 2rem ; /* Adjusted margin for right alignment */
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    text-align: justify;
-    h1{
-        font-size: 6rem;
-    }
-    p{
-        font-size: 2rem;
-    }
-    .saude{ 
-      height: auto; 
-      margin-left: 50%;
-      margin-bottom: 10px;
-      display: block;
-      position: absolute;
-    }
+    right: 0; /* Align to the right */
+  }
 }
 
-@media only screen and (max-width: 900px){
-    .sobre{
-        margin-top: 20rem;
-        margin-left: 5rem;
-        margin-right: 5rem;
-        align-items: center;
-        h1{
-            text-align: center;
+/* Media query for smaller screens */
+@media only screen and (max-width: 1366px) {
+  .sobre {
+    margin-top: 10rem !important;
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+    align-items: center !important;
 
-        }
-        p{
-            text-align: center;
-        }
+    h1 {
+      text-align: center;
+      font-size: 4rem;
     }
+
+    p {
+      text-align: center;
+      font-size: 1.8rem;
+    }
+  }
+  .saude {
+    max-width: 100%;
+
+    margin: 2rem auto 2rem;
+    position: relative;
+    align-items: center;
+
+  }
+}
+
+@media only screen and (max-width: 1367px) {
+  .sobre {
+    margin-top: 10rem !important;
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+    align-items: center !important;
+
+    h1 {
+      text-align: center;
+      font-size: 4rem;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.8rem;
+    }
+  }
+  .saude {
+    max-width: 100%;
+    margin: 2rem auto 5;
+    position:relative;
+    align-items: center;
+
+
+  }
+  .saude img {
+    width: 40%;
+    height: auto;
+  }
 }

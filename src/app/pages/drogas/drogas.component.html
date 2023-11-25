@@ -1,129 +1,34 @@
 <app-navbar></app-navbar>
 
-<body class="row">
-  <div class="topicos center">
-    <div class="maconha">
+<body class="container row">
+  <div class="topicos center ">
+    <div class="maconha col-md-4">
       <img width="64" height="64"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADEElEQVR4nNWZXWhOcRzHP2zcYU3csEnKO7XcuKEW23CpVm5ELta8RCyUWj3LbrzGhQsrJZak1rzWkBC58NaQmGxEaS6Ykg1rjv71O3U6nec8//8553nO+X/r29Pz8v3/vt/nnP/5v0HxsRVoxnIsBv4IF2IxHgKO8D6WYq0nhMt6LL8ajvABlmFRQAiXC7AIR0OCHMIifAoJ8hFLMDckhMs5pTDyCNgDVETUN2sEaYrYdgXQIh4L4r0U+yn3c6VhsYsaQS4YtlkJHBZPSv9OR9TjKzoE7AbKNIu+1AjSq9lWudwdQz79DR3x8TzFnwI1BbTjgWGNIL+AcQXaWgY8y6M/ohNkQ4iBUWB/iIlZGiFczgzx0CTzs3zaRp0gszVMXAImBWhXGQSpDdBPBro0tOoPw6TDh1Fd9mk+XaNBkPU+7XTguYauHwOc0jTzBqjy6DYZBNno0VUDbzV1J02CrDMwpEbqGZ5FlK7OXWxVFZgJOD42mARRj71Bg8ZfAVOAvQaaFulnvQaar8AEDHHCoIDidaDN4PdtMh6Y1DhGBNQYFlH8VqTfOsKlRMS9CMWKxTvEQEMGAjjC1cTEkwyEeEwCMHkUF4trSAhXUgzRTYKolhlrqUMMy9xPC6oTtQO3ZB7zXagGxBfyj7QGrFNKwR6p3S3rnEGPv37x3O4+CK5moA/E5WV3s2AkA2ai8rd3r2xnBgxF5Q5/XzmXAVOOIc8GdfoyzR2QrLBLZumBmAicyYBJpwA7dKfz2zL6ABiJcvqltjWvZcC8I7wNzCcG6mXRNJaC+TGpXUeCWGK4/I3LQTmDTBQrgYEUrsgAsCKpENtlhzGtvjEqD59YaE0xgOOj8hIJuZiFPwBbgM/y/qB8FqfNXKlC/JWp92YZXBXuynd18pn67maM2zVnEmQesAvolCPlPs86wB0o1esX2QM+LdulQYdC7kzBP5BNFU2HtKHa8rbt1usTD+dlcqu8pYJ9Yk7tJ1uN5RLkNZajHPgB/PPt3FuJTrkqB7ActSansWQY6sxRHaaqsxR1YJo4/gMqPMPic/jYEAAAAABJRU5ErkJggg==">
       <h2>Maconha</h2>
         <button type="button" (click)="openModal(maconha)">Saiba Mais sobre a maconha</button>
     </div>
-    <div class="alcool">
+    <div class="alcool col-md-4">
       <img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/alcohol.png" alt="alcohol"/>
       <h2>Bebida Alcoólica</h2>
       <button type="button" (click)="openModal(alcool)">Saiba Mais sobre a maconha</button>
     </div>
-    <div class="cocaina">
+    <div class="cocaina col-md-4">
      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACxUlEQVR4nO2bPWgUQRTHfwhGFCQqRAhCRBFRLNRgISoJWIqKooeFjWlO8AobvXQiVkmhVoEErCxioYIoiB+ojYJo1EJSxuLws/CjiJ85b2XkCcuyd97uze7O7swf/nDHsbPv/ee9N3NvduH/2AbcAb4CXk6obL0NbKVD7AZ+GeBQXCrbd8V1vgt4a4ATnfKN+BIZAwYYr4s74ghw0ADDdVH50jaWA6uBigGG62JFfFK+tcQg8NsAg5NiXVK7KTYDXwwwNCl+BjZFSQcHm7ESeA7M5JzPgL44AmyRolGEwqd8iYUeWT7yTOWDQxz0AFeAuznn5bhRcMCA/NVF5UtklAwwXBeVL06AqCgZMHMuAnApgKsBuCJIs4bnS+AGMA6MtOhhFmIVmBVnK/KfPqzRebxoArwDzgI7gQUhNs4Hen3fy0UQoC4zvU8c9GMdcBSYAJ4CP4AGsLcIAnwDxoBVATs2AmeA6RbXDudZgPfA6UDHdiEwJLPczhi5E2AOuAkcDuT2CqnmHyOOlwsBPgCXgCMh/XnVsbkI/Iw5tjECfAdqwGNxVuXuoZC8VlgiS9oLDeKmKsA1WXqW+ri4zTHXylp9S8TSFV2pClBu49pFwAZgD1CVaJjRnFKZC7AGuA48AqYklGsJPEihtrxXgYemCXAiwRltdrI7YZIAwykJ4K8v+20UYEjuNw+YtFGABvDApK1wWaMAdU3Hb7kU4LXsJ3rlQSbrBLjnu9d9GwVoAOeA8/LZOgE8jXQCULAImAVOig1TNkbAqUCTpGGbAMcC7bE52wR4BfQDy4ALNqaAF5FOAFwE/IVLAVwNwBVBUloFqgZU/3+splkDRuT3funSZP0w9LS856AwmoYANaAb89AttiUugAc8AbaHnN9ngS6xpdVJshGHo16GdALgIiA6SgaErksBMqwB6+U9u6xnr1N+El9C8QcqaJbbBe2XJQAAAABJRU5ErkJggg==">
       <h2>Cocaína</h2>
-      <button id="openModalBtncocaina">Saiba Mais sobre a Cocaína</button>
+      <button type="button" (click)="openModal(cocaina)">Saiba Mais sobre a cocaina</button>
 
     </div>
-    <div class="crack">
+    <div class="crack col-md-4">
       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADKUlEQVR4nO2aW4hNURjHf2OOKTMmYWRqELnXJA+mlBeDXDOSQh7EpFEelEYUEZKi0JBihIchSijkUrxRyuQyybiOaCLGJSTjerRqqd3X2mc72572OmevX606e+29v/Xt/1mXb317g8PhcDgcDoc/X4E2oAmYDnQjYaRFeQ7UA6UkVIC0Lq+BWqCAhAqQ1uU80Ic8pgcwDKgD7vqI8BAYQAIoBDYCvw0iPAHKSAgrfXrCVSBFQjjqI8JuEkIZ0GEQQA2PaRHYl3atpM6nFzwDeiZBgJR+WJMIDUkQINOE+BOoJAEClADvfES40IUCWCVQQ4ZIcUoSBKjKIMDNkPuFnBJA0ZpBhBoSIMD6DALcDtELck6AERkEUGVOvgsQNAxuJSF3sC2gF8wiz6kKEKA533tBAfAiQISZ5Dl7AgRo0YkVSVvAfdmWw8TEJOHIL6BT1KlkquRLxAJcJMYdYodw5o44bgeKPff0ivjh0zp/GRsHhTNnDf/wBs/1I7tAgDcxPj9ThTNqt7hD1H0GhurrJ4pz10K0Wai34N7MVBEWDYOF+mWKt+4G0F2f89afDNnuS2FnEDHSKJw5BSw1dNVjwGpRtzdkm83CznhiZIJw5jtQroWQInwUx+tCtnlO2JlLzNwXDq3Rr9EeB0xgqqdE0etWEDP1wqGnen4YqH/7CTAjZHubhJ2txEw/4JtwarE+p0S47iPA2JDtLRd2DmEBjcKpB55QWH1ssQC4pNftv9f0D9lWTYRJ2cgYoidAr2OL6BrGGSJQKzhiCIVV+Bs1FaIdFXdYwXDgh3BODY2oKRZtfMAidgrnVKg6OeI2etu0H5CUGpIlr/RqEBXVwv49LKNa5wdkgkQtl1FwQNjeh4VsNqz76p8a/J92Kw2rzWwszRueMIjwFpgX0ma5IbxusfmjziLgtE8UeFkPlWxScO2GCdb6FHzKECV6yyNgFzAfGAP01cKV6AzSMuCKz73bySGWAJ8CdofZlCafrLPVVADHfb4//Nei0mFrc/3FyyhgP/A+y4c/A4wmj0jpyW2LnixbdVzfqZOprXoHucqTWHU4HA6Hw+EgG/4Ajp5oucWmzlIAAAAASUVORK5CYII=">      <h2>Crack</h2>
       <button type="button" class="btn btn-primary" [routerLink]="['sobrenos']">Saiba Mais sobre o Crack</button>
     </div>
-    <div class="ectase">
+    <div class="ectase col-md-4">
       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/0lEQVR4nO2bW4iNURTHf+TWuA6GhJHrzKBc8oDk1jxIygMTD9Kk3HIb1/LCIJFSQ4yEN7lfUsjlibyM8CAUmqJmJjPkNhjjdrRqfdp9nXPmO9+c8e3DXrVq2vv/7b3XmrXWXnvvdaBpmgjcAD4DsQxhWet1YDzNpFnANwsECsuy9plhhW8H1FggRHO5WmVJmSZbsPh08aQwCphrwcLTxSJLYOoFDAJWWLDwdPEKlUlkS0pTgJ8WLLil+Ie6dkIaA7y3YKEtxe+A0am4g6P/mQYAD4DKDOf7QG4YBYzToPEvBD6RJRTl6PaRySwyOApDOcA54GaG89mwVjDHAv9NF4ssKVORBQtPF4ssTgGpUpEF/zlnATgXwMUAXBDE7QK4bRCXB+ASIVwmiEuFcWcB3GEIdxrEHYdx9wFYfiHyBbgK7ASWAsuBbcBl4FMcvLRdAbYrdhmwC7gGNGRSKlwHlACdk4wtfasUWwusbALfBVireKsVcAbINsboCMwG1gEb9J3efKLO9uG7Kn4JsAaYAfQ0+rsD521VwF6glX4rT1EnEhRWyfP7RaDAN99q4HscfCNwCuijOJljn20KOG0IXwx8CPCN+PUiY779TeDFgjxqpW8WViigFuim3ywGfqWwMLGG+fqtuMbbBLjHPldAXafOBgWUKF5M+mvI3WKIjrE5Tv9zoLf2D9FdxXOH9VEr4KsGJvQJKhaSjxtW4I8Du7Uv3yjbO6ptPTRGRKaA20b0DrKQZIqUHUOowtcn8aTcZ+71QCfF34lSAfsVW9gM4T2epmOVB8R7ZbAHolTAFsUu9LV/1ArNRN9VKcZsW6BjlQZUgBc8t0apgFLFzvO1S7VZhwRKqNK+sb52GUNoR4ovvtuiVMAho6LcbB+YJDBKtohWb8Qz6SMBFSAKFDocpQLuKrat1uB57eISQhN81eaNhqDFRrvs/220/WGAeV8D7RV/L0oF/AD6xsnkHhkLlMLEMuVR2iYu8MTASx9qOT8Dpt1C/QPiWzQR2m7s4W+Mdjm0ZMUZN0vPAuZ/08vy9gSYr8YoedkZcI0tqoB6oJ9+M91n8i+AjVqfK3XIm4CXPpfwtr/BAc79DQY+N8G9wl9XQAy4ZfwoYWrAHL3WV7h8rAn8K40pqHsFSYD+mgJiwAX1be+gsjvBL06q9abHO0B5ND8BvkrzDbkUQee4ZOuFSAWQZ4zRGhiuFxsz9G/v2Cw0DBjqmzdPM8vCOH35AaN+ZAqIqV8fBEYkGTtPd41GPQeUxRHWpJGaIjdmWpVYpSZDZbp1nQSeJcE/1ZukvXrrc1bHaO46XJkcEVlAzBJ2CsBZQOpUZIHpOhfAxQAiC4IFvjN+prLcNfhfof7Qb1dIy9Am/U7/AAAAAElFTkSuQmCC">
       <h2>Êxtase</h2>
       <button type="button" class="btn btn-primary" [routerLink]="['sobrenos']">Saiba Mais sobre o extase</button>
       <p></p>
     </div>
   </div>
-
-
-
-<div id="myModalcocaina" class="modal">
-  <div class="modal-content">
-    <span class="close" id="closeModalBtncocaina">&times;</span>
-    <h1>O que e Cocaína?</h1>
-    <br>
-    <h2>
-      Cocaína é um alcaloide natural retirado de espécies vegetais do gênero Erythroxylon. O gênero é conhecido, principalmente, por duas espécies, Erytroxylum coca e Erytroxylum novogranatense, as quais são conhecidas popularmente como plantas da coca. A espécie Erytroxylum coca destaca-se como a principal fonte de cocaína para a produção de drogas ilícitas. A espécie Erytroxylum novogranatense, por sua vez, é cultivada de maneira legal e destina-se à obtenção de cocaína para utilização em indústrias farmacêuticas e alimentícias.
-
-Geralmente, o nome cocaína é utilizado para se referir ao cloridrato de cocaína, uma droga ilícita, a qual se apresenta na forma de pó e é, geralmente, utilizada por aspiração ou por injeção endovenosa. O alcaloide, no entanto, não está presente apenas no cloridrato de cocaína, estando também em outras drogas ilícitas, como merla e crack, produtos também obtidos da coca.
-    </h2>
-    <br>
-        <h1>Como a cocaína é usada
-        </h1>
-        <br>
-        <h2>
-          A cocaína ou o cloridrato de cocaína, como exposto, apresenta-se em pó, sendo, geralmente, utilizada por aspiração nasal. Além disso, alguns usuários fazem uso da cocaína por injeção endovenosa, sendo, nesse caso, o pó dissolvido em água. Em relação a essa segunda forma de uso, não podemos deixar de destacar o risco aumentado de o indivíduo contrair infecções, como hepatite e HIV, devido ao compartilhamento de seringas. Em relação à merla e ao crack, os usuários utilizam essas drogas, geralmente, fumando-as.
-        </h2>
-        <br>
-        <h1>
-          Efeitos da cocaína no organismo
-        </h1>
-        <br>
-        <H2>A cocaína é uma substância estimulante do sistema nervoso central. Ela atua bloqueando a recaptação da dopamina, fazendo com que ocorra um acúmulo desse neurotransmissor no sistema de recompensa cerebral, fenômeno responsável pelos efeitos agudos da droga e também por sua dependência.
-
-          A dopamina é armazenada em terminais pré-sinápticos e é liberada na fenda sináptica após algum estímulo neuronal. Na fenda, ela sofre catabolismo e recaptação para o terminal pré-sináptico. Essa recaptação é realizada por transportadores dopaminérgicos.
-
-          Logo após o uso da droga, o usuário experimenta estes efeitos:
-
-          euforia;
-
-          aumento do estado de vigília;
-
-          aumento da sensação de autoconfiança, prazer e bem-estar;
-
-          aumento do estado de alerta e da concentração;
-
-          aumento das sensações sexuais;
-
-          aceleração do pensamento.
-
-          Com o passar do tempo, a pessoa pode apresentar sintomas indesejáveis, como:
-
-          fadiga;
-
-          mudança repentina do estado de ânimo;
-
-          irritabilidade;
-
-          aumento da impulsividade.
-
-          Em relação aos sintomas físicos, percebe-se um aumento de:
-
-          frequência cardíaca;
-
-          sudorese;
-
-          ritmo respiratório;
-
-          temperatura do corpo.
-
-          O usuário também pode apresentar hipertensão arterial, pupilas dilatadas, e desenvolver hiperatividade motora, tremores nas mãos e espasmos musculares.
-
-          O uso contínuo pode levar a distúrbios psiquiátricos. Alguns dos problemas relatados são:
-
-          depressão;
-
-          ansiedade;
-
-          irritabilidade;
-
-          delírios;
-
-          paranoia</H2>
-        <br>
-        <h1> Estatisticas</h1>
-        <br>
-          <h2>
-            Nosso estudo mostrou que o país é o segundo maior mercado de cocaína e seus derivados no mundo. O número absoluto de usuários no Brasil representa 20% do consumo mundial", disse o psiquiatra Ronaldo Laranjeira, coordenador da pesquisa.
-            Entre os que admitiram ter consumido a droga no último ano, 2,6 milhões são adultos e 244 mil são adolescentes. A Unifesp entrevistou 4.607 pessoas com mais de 14 anos de idade mediante questionários em residências de 149 municípios do país.
-          </h2>
-        <h2>
-          Segundo a pesquisa, 5,1 milhões de adultos e 316 mil adolescentes cheiraram cocaína alguma vez; já 1,8 milhões de adultos e 150 mil adolescentes fumaram algum dos derivados da droga.
-
-O estudo indica também que 2 milhões de brasileiros fumaram crack ou merla em alguma ocasião e que 1,2 milhões fez uso no último ano. O consumo foi três vezes maior em áreas urbanas do que em áreas rurais, e muito concentrado (46%) no Sudeste.
-        </h2>
-        <h2>A partir dessas definições, é considerado moderado o consumo de, no máximo, duas doses em único dia ou 14 doses por semana para os homens. Para as mulheres, as quantidades são de uma dose em 24 horas ou sete doses durante sete dias.
-
-          Já a Vigilância de Fatores de Risco e Proteção para Doenças Crônicas por Inquérito Telefônico (Vigitel), do Ministério da Saúde, define consumo abusivo quando homens ingerem cinco ou mais doses ou quando mulheres bebem quatro ou mais doses em uma única ocasião no mês — situações também chamadas de Beber Pesado Episódico (BPE).
-
-          Essas definições constatam, portanto, que muitos brasileiros não estão bebendo com moderação. De acordo com a Vigitel 2021, o padrão de consumo de 18,4% da população brasileira é de bebedor abusivo. Entre os homens, esse percentual é de 25,6%. Em 2010, esse número era de 27%. A ingestão de bebida alcoólica entre as mulheres, no entanto, aumentou nesse período. Em 2010, 10,5% delas tinham um consumo abusivo. Em 2021, esse percentual subiu para 12,7%.</h2>
-  </div>
-</div>
 
 <ng-template #maconha let-modal>
   <div class="modal-header">
@@ -194,3 +99,62 @@ O estudo indica também que 2 milhões de brasileiros fumaram crack ou merla em 
     <button type="button" class="btn btn-outline-dark" (click)="modal.close('Fechar')">Fechar</button>
   </div>
 </ng-template>
+<ng-template #cocaina let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title" style="color: black; font-size: 30px;">O que e cocaina?</h4>
+    <button type="button" class="close" aria-label="Fechar" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="color: black;">
+      <h2>
+        Cocaína é um alcaloide natural retirado de espécies vegetais do gênero Erythroxylon. O gênero é conhecido, principalmente, por duas espécies, Erytroxylum coca e Erytroxylum novogranatense, as quais são conhecidas popularmente como plantas da coca. A espécie Erytroxylum coca destaca-se como a principal fonte de cocaína para a produção de drogas ilícitas. A espécie Erytroxylum novogranatense, por sua vez, é cultivada de maneira legal e destina-se à obtenção de cocaína para utilização em indústrias farmacêuticas e alimentícias.
+
+Geralmente, o nome cocaína é utilizado para se referir ao cloridrato de cocaína, uma droga ilícita, a qual se apresenta na forma de pó e é, geralmente, utilizada por aspiração ou por injeção endovenosa. O alcaloide, no entanto, não está presente apenas no cloridrato de cocaína, estando também em outras drogas ilícitas, como merla e crack, produtos também obtidos da coca.
+      </h2>
+        <br>
+        <h1>Como a cocaína é usada
+        </h1>
+        <br>
+        <h2>
+          A cocaína ou o cloridrato de cocaína, como exposto, apresenta-se em pó, sendo, geralmente, utilizada por aspiração nasal. Além disso, alguns usuários fazem uso da cocaína por injeção endovenosa, sendo, nesse caso, o pó dissolvido em água. Em relação a essa segunda forma de uso, não podemos deixar de destacar o risco aumentado de o indivíduo contrair infecções, como hepatite e HIV, devido ao compartilhamento de seringas. Em relação à merla e ao crack, os usuários utilizam essas drogas, geralmente, fumando-as.
+        </h2>
+        <br>
+        <h1> Efeitos da cocaína no organismo</h1>
+        <br>
+        <h2>
+          A cocaína é uma substância estimulante do sistema nervoso central. Ela atua bloqueando a recaptação da dopamina, fazendo com que ocorra um acúmulo desse neurotransmissor no sistema de recompensa cerebral, fenômeno responsável pelos efeitos agudos da droga e também por sua dependência.
+
+A dopamina é armazenada em terminais pré-sinápticos e é liberada na fenda sináptica após algum estímulo neuronal. Na fenda, ela sofre catabolismo e recaptação para o terminal pré-sináptico. Essa recaptação é realizada por transportadores dopaminérgicos.
+        </h2>
+        <h2>
+          <li>euforia</li>
+          <li>aumento do estado de vigília</li>
+          <li>aumento das sensações sexuais</li>
+          <li>aceleração do pensamento</li>
+          <li>temperatura do corpo</li>
+          <br>
+          <h2>
+            O uso contínuo pode levar a distúrbios psiquiátricos. Alguns dos problemas relatados são:
+          </h2>
+          <li>paranoia</li>
+          <li>delírios</li>
+          <li>irritabilidade</li>
+          <li>ansiedade</li>
+          <li>depressão</li>
+          <br>
+        </h2>
+
+        <h1> Estatisticas</h1>
+        <br>
+          <h2>
+            A cocaína é a segunda droga ilícita mais traficada no mundo. As estatísticas mais recentes mostram que as apreensões internacionais de cocaína continuam aumentando e hoje chegam a 756 toneladas, com as maiores quantidades interceptadas na América do Sul, seguida pela América do Norte.
+
+De acordo com uma pesquisa realizada pela Universidade Federal de São Paulo (Unifesp) e divulgada em dezembro de 2013, 3 milhões de pessoas usam com frequência cocaína e crack, o dobro dos 1,5 milhão de pessoas que usam maconha diariamente. 20% do mercado mundial de crack e cocaína são representados pelo Brasil. 45% dos usuários experimentaram cocaína pela primeira vez antes dos 18 anos.
+          </h2>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Fechar')">Fechar</button>
+  </div>
+</ng-template>
+<app-footer></app-footer>
