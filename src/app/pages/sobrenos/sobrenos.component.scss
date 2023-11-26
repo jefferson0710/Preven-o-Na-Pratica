@@ -20,17 +20,16 @@
   }
   .saude {
     max-width: 100%;
-    margin: 2rem 40rem 2rem ; /* Adjusted margin for right alignment */
+    margin: 2rem 40rem 2rem ;
     position: absolute;
     display: flex;
-    right: 0; /* Align to the right */
+    right: 0;
   }
 }
 
-/* Media query for smaller screens */
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 768px) {
   .sobre {
-    margin-top: 10rem !important;
+    margin-top: 20rem !important;
     margin-left: 2rem !important;
     margin-right: 2rem !important;
     align-items: center !important;
@@ -45,43 +44,44 @@
       font-size: 1.8rem;
     }
   }
-  .saude {
-    max-width: 100%;
-
-    margin: 2rem auto 2rem;
+  .saude img {
+    max-width:50%;
+    margin: 2rem 10rem 0rem ;
     position: relative;
-    align-items: center;
-
+    display: flex;
+    right: 0;
+    top: 43rem;
   }
 }
 
 @media only screen and (max-width: 1367px) {
   .sobre {
-    margin-top: 10rem !important;
+    margin-top: 17rem !important;
     margin-left: 2rem !important;
     margin-right: 2rem !important;
     align-items: center !important;
-
+    flex-direction: column;
+   align-items: start;
+    text-align: justify;
     h1 {
-      text-align: center;
+      text-align: justify;
       font-size: 4rem;
     }
 
     p {
-      text-align: center;
+      text-align: justify;
       font-size: 1.8rem;
     }
   }
   .saude {
-    max-width: 100%;
-    margin: 2rem auto 5;
-    position:relative;
-    align-items: center;
+    position: relative;
 
 
   }
   .saude img {
     width: 40%;
     height: auto;
+    position: relative;
+    margin-left: 60rem;
   }
 }

@@ -20,12 +20,12 @@
     </div>
     <div class="crack col-md-4">
       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADKUlEQVR4nO2aW4hNURjHf2OOKTMmYWRqELnXJA+mlBeDXDOSQh7EpFEelEYUEZKi0JBihIchSijkUrxRyuQyybiOaCLGJSTjerRqqd3X2mc72572OmevX606e+29v/Xt/1mXb317g8PhcDgcDoc/X4E2oAmYDnQjYaRFeQ7UA6UkVIC0Lq+BWqCAhAqQ1uU80Ic8pgcwDKgD7vqI8BAYQAIoBDYCvw0iPAHKSAgrfXrCVSBFQjjqI8JuEkIZ0GEQQA2PaRHYl3atpM6nFzwDeiZBgJR+WJMIDUkQINOE+BOoJAEClADvfES40IUCWCVQQ4ZIcUoSBKjKIMDNkPuFnBJA0ZpBhBoSIMD6DALcDtELck6AERkEUGVOvgsQNAxuJSF3sC2gF8wiz6kKEKA533tBAfAiQISZ5Dl7AgRo0YkVSVvAfdmWw8TEJOHIL6BT1KlkquRLxAJcJMYdYodw5o44bgeKPff0ivjh0zp/GRsHhTNnDf/wBs/1I7tAgDcxPj9ThTNqt7hD1H0GhurrJ4pz10K0Wai34N7MVBEWDYOF+mWKt+4G0F2f89afDNnuS2FnEDHSKJw5BSw1dNVjwGpRtzdkm83CznhiZIJw5jtQroWQInwUx+tCtnlO2JlLzNwXDq3Rr9EeB0xgqqdE0etWEDP1wqGnen4YqH/7CTAjZHubhJ2txEw/4JtwarE+p0S47iPA2JDtLRd2DmEBjcKpB55QWH1ssQC4pNftv9f0D9lWTYRJ2cgYoidAr2OL6BrGGSJQKzhiCIVV+Bs1FaIdFXdYwXDgh3BODY2oKRZtfMAidgrnVKg6OeI2etu0H5CUGpIlr/RqEBXVwv49LKNa5wdkgkQtl1FwQNjeh4VsNqz76p8a/J92Kw2rzWwszRueMIjwFpgX0ma5IbxusfmjziLgtE8UeFkPlWxScO2GCdb6FHzKECV6yyNgFzAfGAP01cKV6AzSMuCKz73bySGWAJ8CdofZlCafrLPVVADHfb4//Nei0mFrc/3FyyhgP/A+y4c/A4wmj0jpyW2LnixbdVzfqZOprXoHucqTWHU4HA6Hw+EgG/4Ajp5oucWmzlIAAAAASUVORK5CYII=">      <h2>Crack</h2>
-      <button type="button" class="btn btn-primary" [routerLink]="['sobrenos']">Saiba Mais sobre o Crack</button>
+      <button type="button" (click)="openModal(crack)">Saiba Mais sobre a maconha</button>
     </div>
     <div class="ectase col-md-4">
       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/0lEQVR4nO2bW4iNURTHf+TWuA6GhJHrzKBc8oDk1jxIygMTD9Kk3HIb1/LCIJFSQ4yEN7lfUsjlibyM8CAUmqJmJjPkNhjjdrRqfdp9nXPmO9+c8e3DXrVq2vv/7b3XmrXWXnvvdaBpmgjcAD4DsQxhWet1YDzNpFnANwsECsuy9plhhW8H1FggRHO5WmVJmSZbsPh08aQwCphrwcLTxSJLYOoFDAJWWLDwdPEKlUlkS0pTgJ8WLLil+Ie6dkIaA7y3YKEtxe+A0am4g6P/mQYAD4DKDOf7QG4YBYzToPEvBD6RJRTl6PaRySwyOApDOcA54GaG89mwVjDHAv9NF4ssKVORBQtPF4ssTgGpUpEF/zlnATgXwMUAXBDE7QK4bRCXB+ASIVwmiEuFcWcB3GEIdxrEHYdx9wFYfiHyBbgK7ASWAsuBbcBl4FMcvLRdAbYrdhmwC7gGNGRSKlwHlACdk4wtfasUWwusbALfBVireKsVcAbINsboCMwG1gEb9J3efKLO9uG7Kn4JsAaYAfQ0+rsD521VwF6glX4rT1EnEhRWyfP7RaDAN99q4HscfCNwCuijOJljn20KOG0IXwx8CPCN+PUiY779TeDFgjxqpW8WViigFuim3ywGfqWwMLGG+fqtuMbbBLjHPldAXafOBgWUKF5M+mvI3WKIjrE5Tv9zoLf2D9FdxXOH9VEr4KsGJvQJKhaSjxtW4I8Du7Uv3yjbO6ptPTRGRKaA20b0DrKQZIqUHUOowtcn8aTcZ+71QCfF34lSAfsVW9gM4T2epmOVB8R7ZbAHolTAFsUu9LV/1ArNRN9VKcZsW6BjlQZUgBc8t0apgFLFzvO1S7VZhwRKqNK+sb52GUNoR4ovvtuiVMAho6LcbB+YJDBKtohWb8Qz6SMBFSAKFDocpQLuKrat1uB57eISQhN81eaNhqDFRrvs/220/WGAeV8D7RV/L0oF/AD6xsnkHhkLlMLEMuVR2iYu8MTASx9qOT8Dpt1C/QPiWzQR2m7s4W+Mdjm0ZMUZN0vPAuZ/08vy9gSYr8YoedkZcI0tqoB6oJ9+M91n8i+AjVqfK3XIm4CXPpfwtr/BAc79DQY+N8G9wl9XQAy4ZfwoYWrAHL3WV7h8rAn8K40pqHsFSYD+mgJiwAX1be+gsjvBL06q9abHO0B5ND8BvkrzDbkUQee4ZOuFSAWQZ4zRGhiuFxsz9G/v2Cw0DBjqmzdPM8vCOH35AaN+ZAqIqV8fBEYkGTtPd41GPQeUxRHWpJGaIjdmWpVYpSZDZbp1nQSeJcE/1ZukvXrrc1bHaO46XJkcEVlAzBJ2CsBZQOpUZIHpOhfAxQAiC4IFvjN+prLcNfhfof7Qb1dIy9Am/U7/AAAAAElFTkSuQmCC">
       <h2>Êxtase</h2>
-      <button type="button" class="btn btn-primary" [routerLink]="['sobrenos']">Saiba Mais sobre o extase</button>
+      <button type="button" (click)="openModal(extase)">Saiba Mais sobre a maconha</button>
       <p></p>
     </div>
   </div>
@@ -37,7 +37,7 @@
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-  <div class="modal-body" style="color: black;">
+  <div class="modal-body" style="color: black; text-align: justify;">
     <h2>A maconha (Cannabis sativa) é, sem dúvidas, uma das drogas mais polêmicas da atualidade. Isso se deve ao fato de que, apesar de ter uso recreativo e apresentar danos ao organismo, essa planta possui componentes que apresentam importância medicinal, sendo, portanto, uma planta que merece atenção.
 </h2>
 <br>
@@ -65,12 +65,12 @@
 </ng-template>
 <ng-template #alcool let-modal>
   <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title" style="color: black; font-size: 30px;">O que e Bebida alcoólica?</h4>
+    <h4 class="modal-title" id="modal-basic-title" style="color: black; font-size: 30px; ">O que e Bebida alcoólica?</h4>
     <button type="button" class="close" aria-label="Fechar" (click)="modal.dismiss('Cross click')">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-  <div class="modal-body" style="color: black;">
+  <div class="modal-body" style="color: black; text-align: justify;">
     <h2>As bebidas alcoólicas são bebidas que contêm etanol em sua composição, produzido pela fermentação alcoólica de açúcares contidos em frutas, grãos ou caules como a cana-de-açúcar. Na maior parte dos países trata-se de uma droga lícita, muito embora seja uma droga psicoativa do tipo depressora e haja restrições para seu consumo em diversos níveis, especialmente no que tange a idade legal para seu consumo. O consumo excessivo de bebidas alcoólicas leva à embriaguez e à ressaca, podendo levar ainda o indivíduo a desenvolver doenças como o alcoolismo, cirrose hepática e mais de 10 tipos distintos de câncer. Apesar dos malefícios causados à saúde humana e das milhares de mortes que o álcool causa no trânsito, muitos países ainda permitem a publicidade de bebidas alcoólicas e o álcool é costumeiramente celebrado por jovens e pela música. Pessoas que não ingerem bebidas alcoólicas são chamadas de abstêmios.</h2>
         <br>
         <h1>Efeitos do álcool
@@ -101,12 +101,12 @@
 </ng-template>
 <ng-template #cocaina let-modal>
   <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title" style="color: black; font-size: 30px;">O que e cocaina?</h4>
+    <h4 class="modal-title" id="modal-basic-title" style="color: black; font-size: 30px;">O que e cocaína?</h4>
     <button type="button" class="close" aria-label="Fechar" (click)="modal.dismiss('Cross click')">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-  <div class="modal-body" style="color: black;">
+  <div class="modal-body" style="color: black; text-align: justify;">
       <h2>
         Cocaína é um alcaloide natural retirado de espécies vegetais do gênero Erythroxylon. O gênero é conhecido, principalmente, por duas espécies, Erytroxylum coca e Erytroxylum novogranatense, as quais são conhecidas popularmente como plantas da coca. A espécie Erytroxylum coca destaca-se como a principal fonte de cocaína para a produção de drogas ilícitas. A espécie Erytroxylum novogranatense, por sua vez, é cultivada de maneira legal e destina-se à obtenção de cocaína para utilização em indústrias farmacêuticas e alimentícias.
 
@@ -157,4 +157,128 @@ De acordo com uma pesquisa realizada pela Universidade Federal de São Paulo (Un
     <button type="button" class="btn btn-outline-dark" (click)="modal.close('Fechar')">Fechar</button>
   </div>
 </ng-template>
-<app-footer></app-footer>
+
+<ng-template #crack let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title" style="color: black; font-size: 30px;">O que e o Crack?</h4>
+    <button type="button" class="close" aria-label="Fechar" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="color: black; text-align: justify;">
+      <h2>
+        O crack é uma substância que, quando introduzida no organismo, altera algumas de suas funções, sendo, portanto, reconhecida como uma droga. Sua produção e comercialização são proibidas no Brasil por lei. Assim, dizemos que o crack é um exemplo de uma droga ilícita.
+      </h2>
+        <br>
+        <h1>Relação do crack com a cocaína
+        </h1>
+        <br>
+        <h2>
+          Como citado anteriormente, o crack é a própria cocaína com modificações. A cocaína é extraída da planta Erythroxylon coca, e o processo de extração envolve a maceração das folhas com solventes até que se obtenha uma pasta, a pasta de coca.
+
+Essa pasta é então tratada com ácido clorídrico, dando origem ao cloridrato de cocaína, que é o pó inalado pelos usuários. O cloridrato de cocaína é transformado em crack quando diluído em água, acrescido de amônia ou bicarbonato de sódio e aquecido.
+        </h2>
+        <br>
+        <h1>Como o crack é utilizado?
+        </h1>
+        <br>
+        <h2>
+          O crack é uma droga que pode ser fumada ou inalada. Geralmente, o usuário queima a pedra de crack em cachimbos feitos de forma improvisada, a partir, por exemplo, de latas de alumínio. O indivíduo então aspira a fumaça produzida pela queima do produto. Em alguns casos, essas pedras são quebradas e misturadas com tabaco ou maconha. Essas misturas são chamadas de mesclado, piticos ou basuco.
+        </h2>
+        <h2>
+          Devido à sua forma de administração, a droga é capaz de atingir velozmente o cérebro, causando efeitos rápidos no organismo. O efeito euforizante produzido pela inalação do vapor da queima do crack é sentindo cerca de dez a 15 segundos após o trago. Devido aos efeitos de grande intensidade e de curta duração, o usuário tende a usar a droga diversas vezes.
+
+        </h2>
+        <br>
+        <h1>
+          Efeitos do crack no organismo:
+        </h1>
+      <br>
+        <h2>
+          <li>euforia</li>
+          <li>espasmos musculares</li>
+          <li>tremores</li>
+          <li>transtorno de sono</li>
+          <li>temperatura do corpo</li>
+          <br>
+          <h2>
+            A inalação da droga em altas temperaturas pode levar ainda ao desenvolvimento de queimaduras que podem atingir:
+          </h2>
+          <li>dedos</li>
+          <li>nariz</li>
+          <li>olhos</li>
+          <li>labios</li>
+          <li>laringe</li>
+          <br>
+        </h2>
+
+        <h1> Estatisticas</h1>
+        <br>
+          <h2>
+            A cocaína é a segunda droga ilícita mais traficada no mundo. As estatísticas mais recentes mostram que as apreensões internacionais de cocaína continuam aumentando e hoje chegam a 756 toneladas, com as maiores quantidades interceptadas na América do Sul, seguida pela América do Norte.
+
+De acordo com uma pesquisa realizada pela Universidade Federal de São Paulo (Unifesp) e divulgada em dezembro de 2013, 3 milhões de pessoas usam com frequência cocaína e crack, o dobro dos 1,5 milhão de pessoas que usam maconha diariamente. 20% do mercado mundial de crack e cocaína são representados pelo Brasil. 45% dos usuários experimentaram cocaína pela primeira vez antes dos 18 anos.
+          </h2>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Fechar')">Fechar</button>
+  </div>
+</ng-template>
+<ng-template #extase let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title" style="color: black; font-size: 30px;">O que e o Êxtase?</h4>
+    <button type="button" class="close" aria-label="Fechar" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="color: black;">
+      <h2>
+        O ecstasy é uma droga recreativa que tem a metilenodioximetanfetamina como princípio ativo. Essa substância é responsável por aumentar o estado de euforia e também a sensação de prazer do usuário. Quando ingerida, os efeitos têm início após 30 a 45 minutos e podem durar entre 4 e 8 horas.
+
+Apesar de parecer inofensivo por oferecer, a princípio, apenas sensações positivas, o ecstasy é extremamente perigoso, podendo causar desidratação e elevação da temperatura do corpo, duas condições que podem levar a derrames cerebrais.
+      </h2>
+        <br>
+        <h1>Mecanismo de ação do ecstasy no corpo
+        </h1>
+        <br>
+        <h2>
+          O mecanismo de ação do ecstasy no sistema nervoso central ainda não é 100% esclarecido, mas estudos mostram que o MDMA possui efeito estimulante e alucinógeno por aumentar a liberação e diminuir a recaptação dos neurotransmissores serotonina, dopamina e noradrenalina em determinadas partes do cérebro.
+
+A duração do efeito é de cerca de 4 a 8 horas, quando ingerido oralmente.
+        </h2>
+        <br>
+        <h1>
+          Quais os efeitos do ecstasy no organismo?
+        </h1>
+      <br>
+        <h2>
+          <li>Náuseas</li>
+          <li>Desidratação</li>
+          <li>Hipertensão</li>
+          <li>Ataques de pânico</li>
+          <li>Perda do autocontrole</li>
+          <br>
+          <h1>
+            Ecstasy ou MDMA: Possíveis danos e riscos para a saúde
+          </h1>
+          <h2>
+            O uso da droga provoca a aceleração dos ritmos cardíacos e o aumento da pressão arterial, podendo levar ao rompimento de vasos sanguíneos e hemorragias internos. Além disso, também pode causar lesões hepáticas e amolecer ou aumentar o fígado. Dependendo do grau de toxicidade, pode evoluir para uma hepatite fulminante e causar morte.
+
+O uso de MDMA está ligado à realização de atividade física, como dança, já que é bastante utilizado em festas. Isso pode causar o aumento da temperatura corporal e provocar sintomas como desorientação, vertigens, dores de cabeça, fadiga, cãibras e desmaio.
+          </h2>
+          <br>
+        </h2>
+
+        <h1> Estatisticas</h1>
+        <br>
+          <h2>
+            O Relatório Mundial de Drogas 2006, elaborado anualmente pelo Escritório das Nações Unidas contra Drogas e Crime (Unodc) e divulgado nesta segunda-feira, no Centro de Informações da ONU, no Rio de Janeiro, revelou que o consumo de ecstasy aumentou no Brasil. Só em 2004 foram apreendidos mais de 80 mil comprimidos. O relatório mostra também que o país ainda é rota do tráfico de drogas, principalmente de cocaína
+          </h2>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Fechar')">Fechar</button>
+  </div>
+
+</ng-template>
+
+
