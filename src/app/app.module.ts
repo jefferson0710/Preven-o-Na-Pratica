@@ -39,11 +39,11 @@ import { EmailService } from './serve';
     ToastrModule.forRoot({
       timeOut: 3000,
       preventDuplicates: true,
-      progressBar: true, // Adiciona uma barra de progresso
-      progressAnimation: 'increasing', // Animação da barra de progresso
-      tapToDismiss: true, // Desabilita o fechamento do toast ao clicar
-      extendedTimeOut: 1000, // Tempo extra para fechar após passar o mouse
-      toastClass: 'custom-toast', // Adiciona uma classe personalizada para estilização
+      progressBar: true,
+      progressAnimation: 'increasing',
+      tapToDismiss: true,
+      extendedTimeOut: 1000,
+      toastClass: 'custom-toast',
     }),
     BrowserAnimationsModule
   ],

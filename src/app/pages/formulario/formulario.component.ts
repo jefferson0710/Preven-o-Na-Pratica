@@ -14,17 +14,20 @@ export class FormularioComponent {
   emailDestino: string = '';
   experienciaUsuario: string = '';
 
+
   constructor(private http: HttpClient, private Router:Router,private toastr: ToastrService,) {}
 
   enviarEmail() {
     const emailService = new EmailService(this.http);
     const destinatario = this.emailDestino;
-    const assunto = 'Obrigado por comparilha sua Experiencia';
+    const assunto = 'Obrigado por compartilha sua Experiencia';
     const conteudo = `<p>${this.experienciaUsuario} </p>`;
 
+    // endpoint que chama função de enviar e-mail
     emailService.enviarEmail(destinatario, assunto, conteudo).subscribe(
+      // Verificação básica se o e-mail foi enviado ou não
       (resposta) => {
-        console.log('E-mail enviado com sucesso', resposta);
+        console.log('E-mail enviado com sucesso.', resposta);
        this.toastr.success('E-mail enviado com sucesso.')
         setTimeout(() => {
         this.Router.navigate(['/']);
@@ -32,7 +35,7 @@ export class FormularioComponent {
         }, 1000);
       },
       (erro) => {
-        console.error('Erro ao enviar e-mail', erro);
+        console.error('Erro ao enviar e-mail.', erro);
         this.toastr.error('Digite um e-mail valido.')
       }
     );
