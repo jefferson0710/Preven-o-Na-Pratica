@@ -85,3 +85,35 @@
     margin-left: 60rem;
   }
 }
+
+@media only screen and (max-width: 1306px) {
+  .sobre {
+    margin-top: 17rem !important;
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+    align-items: center !important;
+    flex-direction: column;
+   align-items: start;
+    text-align: justify;
+    h1 {
+      text-align: justify;
+      font-size: 4rem;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 1.8rem;
+    }
+  }
+  .saude {
+    position: relative;
+
+
+  }
+  .saude img {
+    width: 40%;
+    height: auto;
+    position: relative;
+    margin-left: 60rem;
+  }
+}
