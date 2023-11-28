@@ -59,10 +59,10 @@
         background-color: rgb(26, 36, 39);
     }
 }
-@media only screen and (max-width: 1367px){
+@media only screen and (max-width: 1366px){
   .navbar{
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
 
   }
 }
