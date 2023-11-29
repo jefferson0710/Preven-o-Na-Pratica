@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
   // Utilizando API Brevo para que o e-mail seja enviado com sucesso.
 
 export class EmailService {
-  private apiKey = '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';
+  private apiKey = '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';
   private apiUrl = 'https://api.sendinblue.com/v3/smtp/email';
 
   // Criando o escopo e o envio do e-mail.
