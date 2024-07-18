@@ -28,8 +28,32 @@ O projeto foi criado com base no Objetivo de Desenvolvimento Sustentável 3 (ODS
 
 <H2>Instalação e Execução</H2>
 
-### Clone o repositório:
+- **Clone o repositório:**
 
 ```bash
 git clone https://github.com/seu-usuario/prevencao-na-pratica.git
+```
+- **Instale as dependências:**
+```bash
+cd prevencao-na-pratica
+npm install
+```
+- **Execute o projeto:**
+```bash
+ng serve
+```
+- **Acesse no navegador:**
+```bash
+http://localhost:4200
+```
+## Screenshots
+
+![Tela Inicial](screenshots/tela_inicial.png)
+*Descrição da tela inicial*
+
+![Fórum Online](screenshots/forum_online.png)
+*Descrição do fórum online*
+
+![Localização de Clínicas](screenshots/localizacao_clinicas.png)
+*Descrição da funcionalidade de localização de clínicas*
 
