@@ -1,6 +1,8 @@
 # Prevenção na Prática
 
 Prevenção na Prática é um projeto desenvolvido em Angular e Bootstrap, com a utilização da API BREVO para transmissão de mensagens via e-mail e SMS. O objetivo do projeto é auxiliar na prevenção do abuso de substâncias e fornecer informações essenciais sobre os efeitos dessas substâncias.
+![image](https://github.com/user-attachments/assets/b6c59829-2538-49c8-b315-7db065ef752c)
+
 
 ## Objetivos
 
