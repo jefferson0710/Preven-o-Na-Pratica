@@ -27,8 +27,9 @@ O projeto foi criado com base no Objetivo de Desenvolvimento Sustentável 3 (ODS
 - **Envio de Mensagens:** Envio de mensagens via e-mail e SMS utilizando a API BREVO.
 
 <H2>Instalação e Execução</H2>
-- **Clone o repositório:**
+
+### Clone o repositório:
+
 ```bash
-Copiar código
 git clone https://github.com/seu-usuario/prevencao-na-pratica.git
-```
+
