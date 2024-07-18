@@ -48,7 +48,7 @@ http://localhost:4200
 ```
 ## Screenshots
 
-![Tela Inicial](screenshots/tela_inicial.png)
+![Tela Inicial](tela_inicial.png)
 *Descrição da tela inicial*
 
 ![Fórum Online](screenshots/forum_online.png)
