@@ -1,27 +1,18 @@
-# PrevencaoNaPratica
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bf3862dd-de1f-4b7d-8cb3-f533581ff1ae/deploy-status)](https://app.netlify.com/sites/funny-axolotl-d4e6f4/deploys)
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
+Prevenção na Prática
+Prevenção na Prática é um projeto desenvolvido em Angular e Bootstrap, com a utilização da API BREVO para transmissão de mensagens via e-mail e SMS. O objetivo do projeto é auxiliar na prevenção do abuso de substâncias e fornecer informações essenciais sobre os efeitos dessas substâncias.
 
-## Development server
+Objetivos
+Auxiliar na prevenção do abuso de substâncias: Disponibilizando informações e recursos que ajudem a conscientizar e educar sobre os riscos e consequências do uso de substâncias.
+Fornecer informações sobre os efeitos das substâncias: Oferecendo dados precisos e atualizados sobre como diferentes substâncias afetam o organismo.
+Criação de um fórum online: Um espaço para compartilhamento de experiências, onde os usuários podem discutir e apoiar uns aos outros.
+Localização de clínicas de reabilitação e ONGs: Facilitando a busca por locais de tratamento e apoio.
+Baseado no ODS 3 da ONU
+O projeto foi criado com base no Objetivo de Desenvolvimento Sustentável 3 (ODS 3) da ONU, que aborda o subtema: "Reforçar a prevenção e o tratamento do abuso de substâncias, incluindo o abuso de drogas entorpecentes e o uso nocivo do álcool." O Prevenção na Prática nasceu com a missão de enfrentar esse problema de frente, oferecendo recursos e informações essenciais para fortalecer tanto a prevenção quanto o tratamento.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Tecnologias Utilizadas
+Angular 18
+Bootstrap
+API BREVO
+Funcionalidades
+Verificação de E-mail: O sistema utiliza a API BREVO para verificar de forma básica se um e-mail é válido ou não, informando ao cliente sobre a validade do e-mail.
+Envio de Mensagens: Envio de mensagens via e-mail e SMS utilizando a API BREVO.
