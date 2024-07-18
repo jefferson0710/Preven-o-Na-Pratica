@@ -56,7 +56,8 @@ http://localhost:4200
 *Localização de clínicas*
 
 ## Contribuições
-<h2>Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests no repositório.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests no repositório.
 
-</h2>
+<strong>Prevenção na Prática</strong> - Fortalecendo a prevenção e o tratamento do abuso de substâncias para um futuro mais saudável.
 
+Copiar código
