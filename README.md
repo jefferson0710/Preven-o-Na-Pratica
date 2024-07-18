@@ -49,11 +49,11 @@ http://localhost:4200
 ## Screenshots
 
 ![Tela Inicial](tela_inicial.png)
-*Descrição da tela inicial*
+* tela inicial*
 
-![Fórum Online](screenshots/forum_online.png)
-*Descrição do fórum online*
+![Fórum Online](formulario.png)
+* Formulário*
 
-![Localização de Clínicas](screenshots/localizacao_clinicas.png)
-*Descrição da funcionalidade de localização de clínicas*
+![Localização de Clínicas](localização.png)
+*Localização de clínicas*
 
